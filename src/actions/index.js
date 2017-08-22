@@ -1,14 +1,14 @@
 import axios from 'axios';
 
-export const FETCH_BOOKS = 'fetch_books';
+export const FETCH_PHOTOS = 'fetch_photos';
 
-const ROOT_URL = 'http://localhost:8080/books'
+const ROOT_URL = 'https://jsonplaceholder.typicode.com/'
 
-export function fetchBooks(){
-	const request = axios.get(`${ROOT_URL}/books`);
+export function fetchPhotos(){
+	const request = axios.get(`${ROOT_URL}/photos`);
 
 	return {
-		type: FETCH_BOOKS,
+		type: FETCH_PHOTOS,
 		payload: request
 	};
 }
