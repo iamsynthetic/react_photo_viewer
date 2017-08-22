@@ -2,7 +2,7 @@ import _ from 'loadash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchBooks } from '../actions';
+import { fetchPhotos } from '../actions';
 
 class BooksIndex extends Component {
 	componentDidMount(){
@@ -12,7 +12,7 @@ class BooksIndex extends Component {
 	render(){
 		return (
 			<div>
-				<h3>Books</h3>
+				<h3>Photos</h3>
 			</div>
 		);
 	}
@@ -22,4 +22,4 @@ function mapStateToProps(state){
 	return { posts: state.posts }
 }
 
-export default connect(mapStateToProps, {fetchBooks})(BooksIndex);
+export default connect(mapStateToProps, {fetchPhotos})(PhotosIndex);
