@@ -1,12 +1,12 @@
-import _ from 'loadash';
+import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchPhotos } from '../actions';
 
-class BooksIndex extends Component {
+class PhotosIndex extends Component {
 	componentDidMount(){
-		this.props.fetchBooks();
+		this.props.fetchPhotos();
 	}
 
 	render(){

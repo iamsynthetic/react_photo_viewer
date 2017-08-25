@@ -1,27 +1,26 @@
-const path = require("path");
-const HtmlPlugin = require("html-webpack-plugin");
-
-const html = new HtmlPlugin({ template: "./src/app.html" });
-const outputPath = path.resolve(__dirname, "build");
-
 module.exports = {
-  entry: {
-    application: "./src/app.js"
-  },
-
+  entry: [
+    './src/index.js'
+  ],
   output: {
-    filename: "[name].[chunkhash].js",
-    path:outputPath
+    path: __dirname,
+    publicPath: '/',
+    filename: 'bundle.js'
   },
-
   module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+    loaders: [{
+      exclude: /node_modules/,
+      loader: 'babel',
+      query: {
+        presets: ['react', 'es2015', 'stage-1']
       }
-    ]
+    }]
   },
-
-  plugins: [html]
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
+  devServer: {
+    historyApiFallback: true,
+    contentBase: './'
+  }
 };
