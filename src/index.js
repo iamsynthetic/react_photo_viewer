@@ -10,6 +10,8 @@ import PhotosIndex from './components/photos_index';
 import PhotosNew from './components/photos_new';
 import PhotosShow from './components/photos_show';
 
+import styles from './style/style.css';
+
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
 ReactDOM.render(

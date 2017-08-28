@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchPhotos } from '../actions';
 
+import styles from '../style/style.css';
+
 class PhotosIndex extends Component {
 	componentDidMount(){
 		this.props.fetchPhotos();
