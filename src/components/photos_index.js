@@ -9,17 +9,41 @@ class PhotosIndex extends Component {
 		this.props.fetchPhotos();
 	}
 
+	renderPhotos(){
+		return _.map(this.props.photos, photo => {
+			return (
+				<li className="list-group-item" key={photo.id}>
+					<div>
+						<img src={photo.thumbnailUrl} />
+						<Link to={`/photos/${photo.id}`}>
+						{photo.title}
+						</Link>
+					</div>
+				</li>
+			);
+		})
+	}
+
 	render(){
+		
 		return (
 			<div>
+				<div className="text-xs-right">
+					<Link className="btn btn-primary" to="/photos/new">
+						Add a Photo
+					</Link>
+				</div>
 				<h3>Photos</h3>
+				<ul className="list-group">
+					{this.renderPhotos()}
+				</ul> 
 			</div>
 		);
 	}
 }
 
 function mapStateToProps(state){
-	return { posts: state.posts }
+	return { photos: state.photos }
 }
 
 export default connect(mapStateToProps, {fetchPhotos})(PhotosIndex);

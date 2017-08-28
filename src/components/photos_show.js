@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchPhotos } from '../actions';
+import { deletePhoto } from '../actions';
 
 class PhotosShow extends Component {
 
 	componentDidMount(){
-		if(!this.props.post){
+		if(!this.props.photos){
 			const { id } = this.props.match.params;
 			this.props.fetchPhotos(id);
 		}
@@ -21,28 +22,28 @@ class PhotosShow extends Component {
 	
 	render(){
 
-		const { post } = this.props;
+		const { photos } = this.props;
 
-		if(!post){
-			return <div>Loading...</div>
+		if(!photos){
+			return <div>Loading...</div>;
 		}
 
 		return (
 			<div>
-				<Link to="/">Back to Index</Link>
+				<Link to="/">Back to Home</Link>
 				<button className="btn btn-danger pull-xs-right" onClick={this.onDeleteClick.bind(this)}>
 					Delete Photo
 				</button>
-				<h3>{photo.title}</h3>
-				<h6>categories: {photo.categories}</h6>
-				<p>{photo.content}</p>
+				<h3>{photos.title}</h3>
+				<h6>categories: {photos.categories}</h6>
+				<img src={photos.url} />
 			</div>
 		)
 	}
 }
 
 function mapStateToProps({ photos }, ownProps){
-	return { photo: photo[ownProps.match.params.id]};
+	return { photos: photos[ownProps.match.params.id]};
 }
 
 export default connect(mapStateToProps, { fetchPhotos, deletePhoto })(PhotosShow);
