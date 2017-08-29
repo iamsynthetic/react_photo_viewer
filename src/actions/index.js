@@ -15,11 +15,18 @@ export function fetchPhotos(){
 }
 
 export function deletePhoto(id){
-	const request = axios.get(`${ROOT_URL}/photos/${id}`)
-	.then(() => callback());
+	//const request = axios.delete(`${ROOT_URL}/photos/${id}`)
+	//.then(() => callback());
+	// const request = axios.get(`${ROOT_URL}/photos`)
+	// .then(() => callback());
+
+	const request = axios.get(`${ROOT_URL}/photos`);
+
+	const alldata = [id, request];
+	//console.log(alldata);
 
 	return {
 		type: DELETE_PHOTO,
-		payload: id
+		payload: alldata
 	}
 }
