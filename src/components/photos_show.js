@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchPhotos } from '../actions';
 import { deletePhoto } from '../actions';
+import { photoId } from '../actions';
 
 class PhotosShow extends Component {
 
@@ -49,4 +50,4 @@ function mapStateToProps({ photos }, ownProps){
 	return { photos: photos[ownProps.match.params.id]};
 }
 
-export default connect(mapStateToProps, { fetchPhotos, deletePhoto })(PhotosShow);
+export default connect(mapStateToProps, { fetchPhotos, deletePhoto, photoId })(PhotosShow);
