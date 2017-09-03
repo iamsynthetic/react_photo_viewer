@@ -35,20 +35,30 @@ export function fetchPhotos(){
 // }
 // 
 // 
-export function deletePhoto(id){
-	const request = axios.get(`${ROOT_URL}/photos`);
+// export function deletePhoto(id){
+// 	const request = axios.get(`${ROOT_URL}/photos`);
+//     const blah = 'hello';
 
-	return {
-		type: DELETE_PHOTO,
-		payload:{
-			id: id,
-			url: blah
-		}
-	};
-	// return [
-	// 	testOne(id),
-	// 	testTwo(request)
-	// ]
+// 	return [
+// 		testOne(id),
+// 		testTwo(request)
+// 	]
+// }
+
+export function deletePhoto(id){
+	
+    return (dispatch, getState) => {
+	    //perform API call
+	    axios.get(`${ROOT_URL}/photos/`)
+	      .then(response => {
+	        // now that you have the response, you can dispatch the action
+	        dispatch({
+	          type: DELETE_PHOTO,
+	          payload: response,
+	          payload2: id
+	        });
+	      });
+  	}
 }
 
 

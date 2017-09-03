@@ -4,14 +4,15 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import promise from 'redux-promise';
-import multi from 'redux-multi'
+import multi from 'redux-multi';
+import thunk from 'redux-thunk';
 
 import reducers from './reducers';
 import PhotosIndex from './components/photos_index';
 import PhotosNew from './components/photos_new';
 import PhotosShow from './components/photos_show';
 
-const createStoreWithMiddleware = applyMiddleware(promise, multi)(createStore);
+const createStoreWithMiddleware = applyMiddleware(promise, multi, thunk)(createStore);
 
 ReactDOM.render(
 	<Provider store={createStoreWithMiddleware(reducers)}>

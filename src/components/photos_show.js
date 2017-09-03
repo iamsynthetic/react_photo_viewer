@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchPhotos } from '../actions';
 import { deletePhoto } from '../actions';
-import { photoId } from '../actions';
 
 class PhotosShow extends Component {
 
@@ -15,13 +14,11 @@ class PhotosShow extends Component {
 	}
 
 	onDeleteClick(){
-		const{ id } = this.props.match.params;
-		// this.props.deletePhoto(id);
-		// this.props.history.push('/');
-		this.props.deletePhoto(id);
-		// this.props.deletePhoto(id, () => {
-		// 	this.props.history.push('/');
-		// });
+		const { id } = this.props.match.params;
+		//this.props.deletePhoto(id);
+		this.props.deletePhoto(id, () => {
+			this.props.history.push('/');
+		});
 	}
 	
 	render(){
@@ -50,4 +47,4 @@ function mapStateToProps({ photos }, ownProps){
 	return { photos: photos[ownProps.match.params.id]};
 }
 
-export default connect(mapStateToProps, { fetchPhotos, deletePhoto, photoId })(PhotosShow);
+export default connect(mapStateToProps, { fetchPhotos, deletePhoto })(PhotosShow);
