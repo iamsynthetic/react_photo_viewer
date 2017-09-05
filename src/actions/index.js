@@ -2,11 +2,10 @@ import axios from 'axios';
 
 export const FETCH_PHOTOS = 'fetch_photos';
 export const DELETE_PHOTO = 'delete_photo';
-export const TEST_ONE = 'test_one';
-export const TEST_TWO = 'test_two';
-export const TEST_THREE = 'test_three';
 
-const ROOT_URL = 'https://jsonplaceholder.typicode.com'
+//const ROOT_URL = 'https://jsonplaceholder.typicode.com'
+const ROOT_URL = 'http://localhost:3000'
+
 
 export function fetchPhotos(){
 	const request = axios.get(`${ROOT_URL}/photos`);
@@ -45,43 +44,76 @@ export function fetchPhotos(){
 // 	]
 // }
 
-export function deletePhoto(id){
+// export function deletePhoto(id){
 	
-    return (dispatch, getState) => {
-	    //perform API call
-	    axios.get(`${ROOT_URL}/photos/`)
-	      .then(response => {
-	        // now that you have the response, you can dispatch the action
-	        dispatch({
-	          type: DELETE_PHOTO,
-	          payload: response,
-	          payload2: id
-	        });
-	      });
-  	}
-}
+//     return (dispatch, getState) => {
+// 	    //perform API call
+// 	    axios.get(`${ROOT_URL}/photos/`)
+// 	      .then(response => {
+// 	        // now that you have the response, you can dispatch the action
+// 	        dispatch({
+// 	          type: DELETE_PHOTO,
+// 	          payload: response,
+// 	          payload2: id
+// 	        });
+// 	      });
+//   	}
+// }
+
+export function deletePhoto(id, callback){
+	const request = axios.delete(`${ROOT_URL}/photos/${id}`)
+	.then(() => callback());
 
 
-export function testOne(id){
-	const request = id;
-		return {
-		type: TEST_ONE,
-		payload:request
+	return{
+		type: DELETE_PHOTO,
+		payload: id
 	}
 }
 
-export function testTwo(req){
-	const request = req;
-		return {
-		type: TEST_TWO,
-		payload:request
-	}
-}
 
-// export function testThree(){
-// 	const request = "3";
-// 		return {
-// 		type: TEST_THREE,
-// 		payload:request
+// export function deletePhoto(id){
+// 	axios({
+// 	  method: 'DELETE',
+// 	  url: `${ROOT_URL}/photos/${id}`,
+// 	  headers: { 'Content-Type': 'application/json' },
+// 	});
+
+// 	return {
+// 		type: DELETE_PHOTO,
+// 		payload: id
 // 	}
+// }
+
+// export function deletePhoto(id){
+	
+//     return (dispatch, getState) => {
+// 	    //perform API call
+// 	    axios({
+// 	  method: 'DELETE',
+// 	  url: `${ROOT_URL}/photos/${id}`,
+// 	  headers: { 'Content-Type': 'application/json' }
+// 	}).then(response => {
+// 	        // now that you have the response, you can dispatch the action
+// 	        dispatch({
+// 	          type: DELETE_PHOTO,
+// 	          payload: response
+// 	        });
+// 	      });
+//   	}
+// }
+// export function deletePhoto(id){
+	
+//     return (dispatch, getState) => {
+// 	    //perform API call
+// 	    axios.get(`${ROOT_URL}/photos/`)
+// 	      .then(response => {
+// 	        // now that you have the response, you can dispatch the action
+// 	        dispatch({
+// 	          type: DELETE_PHOTO,
+// 	          payload: response,
+// 	          payload2: id
+// 	        });
+// 	      });
+//   	}
 // }

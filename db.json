@@ -1,0 +1,42 @@
+{
+  "photos": [
+    {
+      "id": 3,
+      "title": "image 3",
+      "url": "http://placehold.it/600/771796",
+      "thumbnailUrl": "http://placehold.it/150/771796",
+      "author": "typicode"
+    },
+    {
+      "id": 4,
+      "title": "image 4",
+      "url": "http://placehold.it/600/771796",
+      "thumbnailUrl": "http://placehold.it/150/771796",
+      "author": "typicode"
+    },
+    {
+      "id": 5,
+      "title": "image 5",
+      "url": "http://placehold.it/600/771796",
+      "thumbnailUrl": "http://placehold.it/150/771796",
+      "author": "typicode"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
