@@ -14,25 +14,10 @@ class PhotosShow extends Component {
 
 	onDeleteClick(){
 		const { id } = this.props.match.params;
-		//this.props.deletePhoto(id);
-		// this.props.deletePhoto(id, () => {
-		// 	this.props.history.push('/');
-		// });
-
-		console.log(id);
-		console.log('deleteClick this.props is: ' + this.props);
-		//this.props.history.push('/');
 
 		this.props.deletePhoto(id, () => {
-			console.log('something');
-			console.log('deleteClick this.props.history is: ' + this);
-			console.log('fucking finally!');
 			this.props.history.push('/');
 		});
-
-		// showsomething = function(){
-		// 	console.log('something');
-		// }
 	}
 	
 	render(){

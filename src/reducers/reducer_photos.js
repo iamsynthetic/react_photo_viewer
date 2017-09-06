@@ -1,8 +1,7 @@
 import _ from 'lodash';
 import { FETCH_PHOTOS } from '../actions';
 import { DELETE_PHOTO } from '../actions';
-
-const blah = {};
+import { CREATE_PHOTO } from '../actions';
 
 export default function(state = {}, action){
 	switch(action.type){
@@ -37,7 +36,14 @@ export default function(state = {}, action){
 			// console.log('state is: ' + state);
 
 			// // return _.mapKeys(removeItem, thefirst20);
-		
+		case CREATE_PHOTO:
+
+			console.log('CREATE_PHOTO - action.payload is: ' + action.payload);
+			console.log('CREATE_PHOTO - action.payload2 is: ' + action.payload2.title);
+			console.log('CREATE_PHOTO - action.payload2 is: ' + action.payload2.url);
+			console.log('CREATE_PHOTO - action.payload2 is: ' + action.payload2.thumbnailUrl);
+			console.log('CREATE_PHOTO - action.payload2 is: ' + action.payload2.author);
+
 		default:
 			return state; 
 	}

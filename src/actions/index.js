@@ -1,9 +1,11 @@
 import axios from 'axios';
 
 export const FETCH_PHOTOS = 'fetch_photos';
+export const CREATE_PHOTO = 'create_photo';
 export const DELETE_PHOTO = 'delete_photo';
 
 //const ROOT_URL = 'https://jsonplaceholder.typicode.com'
+//resource - https://github.com/typicode/json-server
 const ROOT_URL = 'http://localhost:3000'
 
 
@@ -16,49 +18,16 @@ export function fetchPhotos(){
 	};
 }
 
-// export function deletePhoto(){
-// 	const request = axios.get(`${ROOT_URL}/photos`);	
+export function createPhoto(values, callback){
+	const request = axios.post(`${ROOT_URL}/photos`, values)
+	.then(() => callback());
 
-// 	return {
-// 		type: DELETE_PHOTO,
-// 		payload:request
-// 	}
-// }
-
-// export function photoId(id){
-// 	console.log('actions id is: ' + id)
-// 	return {
-// 		type: PHOTO_ID,
-// 		payload: id
-// 	}
-// }
-// 
-// 
-// export function deletePhoto(id){
-// 	const request = axios.get(`${ROOT_URL}/photos`);
-//     const blah = 'hello';
-
-// 	return [
-// 		testOne(id),
-// 		testTwo(request)
-// 	]
-// }
-
-// export function deletePhoto(id){
-	
-//     return (dispatch, getState) => {
-// 	    //perform API call
-// 	    axios.get(`${ROOT_URL}/photos/`)
-// 	      .then(response => {
-// 	        // now that you have the response, you can dispatch the action
-// 	        dispatch({
-// 	          type: DELETE_PHOTO,
-// 	          payload: response,
-// 	          payload2: id
-// 	        });
-// 	      });
-//   	}
-// }
+	return {
+		type: CREATE_PHOTO,
+		payload:request,
+		payload2:values
+	}
+}
 
 export function deletePhoto(id, callback){
 	const request = axios.delete(`${ROOT_URL}/photos/${id}`)
@@ -71,37 +40,6 @@ export function deletePhoto(id, callback){
 	}
 }
 
-
-// export function deletePhoto(id){
-// 	axios({
-// 	  method: 'DELETE',
-// 	  url: `${ROOT_URL}/photos/${id}`,
-// 	  headers: { 'Content-Type': 'application/json' },
-// 	});
-
-// 	return {
-// 		type: DELETE_PHOTO,
-// 		payload: id
-// 	}
-// }
-
-// export function deletePhoto(id){
-	
-//     return (dispatch, getState) => {
-// 	    //perform API call
-// 	    axios({
-// 	  method: 'DELETE',
-// 	  url: `${ROOT_URL}/photos/${id}`,
-// 	  headers: { 'Content-Type': 'application/json' }
-// 	}).then(response => {
-// 	        // now that you have the response, you can dispatch the action
-// 	        dispatch({
-// 	          type: DELETE_PHOTO,
-// 	          payload: response
-// 	        });
-// 	      });
-//   	}
-// }
 // export function deletePhoto(id){
 	
 //     return (dispatch, getState) => {
