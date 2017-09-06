@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import promise from 'redux-promise';
 import multi from 'redux-multi';
 import thunk from 'redux-thunk';
 
 import reducers from './reducers';
+import MainNavigation from './components/main_navigation';
 import PhotosIndex from './components/photos_index';
 import PhotosNew from './components/photos_new';
 import PhotosShow from './components/photos_show';
@@ -18,6 +19,7 @@ ReactDOM.render(
 	<Provider store={createStoreWithMiddleware(reducers)}>
 		<BrowserRouter>
 			<div>
+				<MainNavigation />
 				<Switch>
 					<Route path="/photos/new" component={PhotosNew} />
 					<Route path="/photos/:id" component={PhotosShow} />
