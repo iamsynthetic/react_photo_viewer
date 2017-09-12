@@ -18,6 +18,8 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "bootstrap": "4.0.0-alpha.6",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "1.0.1",
     "jquery": "^3.2.1",
     "jsdom": "^11.2.0",
     "lodash": "^4.17.4",
@@ -36,8 +38,10 @@
     "redux-multi": "^0.1.12",
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.2.0",
+    "style-loader": "^0.18.2",
     "styled-components": "^2.1.2",
     "webpack": "1.12.9",
+    "webpack-combine-loaders": "^2.0.3",
     "webpack-dev-server": "1.14.0"
   }
 }
