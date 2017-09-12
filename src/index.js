@@ -13,6 +13,8 @@ import MainNavigation from './components/main_navigation';
 import PhotosIndex from './components/photos_index';
 import PhotosNew from './components/photos_new';
 import PhotosShow from './components/photos_show';
+import { Container, Row, Col } from 'reactstrap';
+import styles from './style/styles.css';
 
 const createStoreWithMiddleware = applyMiddleware(promise, multi, thunk)(createStore);
 
@@ -21,13 +23,21 @@ ReactDOM.render(
 		<BrowserRouter>
 			<div>
 				<TopNavbar />
-				<MainNavigation />
-				<Switch>
-					<Route path="/photos/new" component={PhotosNew} />
-					<Route path="/photos/:id" component={PhotosShow} />
-					<Route path="/" component={PhotosIndex} />
-				</Switch>
-			</div>
+				<Container>
+        			<Row>
+          				<Col className={ styles.moduleColor } lg="6">
+          					<MainNavigation />
+          				</Col>
+          				<Col lg="6">
+          					<Switch>
+								<Route path="/photos/new" component={PhotosNew} />
+								<Route path="/photos/:id" component={PhotosShow} />
+								<Route path="/" component={PhotosIndex} />
+							</Switch>
+          				</Col>
+          			</Row>
+          		</Container>
+          	</div>
 		</BrowserRouter>
 	</Provider>
 	, document.querySelector('.container'));

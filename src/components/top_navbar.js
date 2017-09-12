@@ -10,28 +10,29 @@ class TopNavbar extends Component {
 
 	render(){
 		return (
-
 			<div>
-		        <p className={styles.test}>List Based</p>
-				<p className={ styles.text }>Scoped Selectors</p>
+		        <p className={ styles.headline }>List Based</p>
 		        <Nav vertical>
 		        	<NavItem>
-		            <NavLink href="#">Link</NavLink>
+		            <NavLink className={ styles.links } href="#">Link</NavLink>
 		          </NavItem>
 		          <NavItem>
-		            <NavLink href="#">Link</NavLink>
+		            <NavLink className={ styles.links } href="#">Link</NavLink>
 		          </NavItem>
 		          <NavItem>
-		            <NavLink href="#">Another Link</NavLink>
+		            <NavLink className={ styles.links } href="#">Another Link</NavLink>
 		          </NavItem>
 		          <NavItem>
-		            <NavLink disabled href="#">Disabled Link</NavLink>
+		            <NavLink className={ styles.links } disabled href="#">Disabled Link</NavLink>
 		          </NavItem>
 		        </Nav>
 		        <hr />
-		        <p className={styles.test}>Link based</p>
+		        <p className={ styles.headline }>Link based</p>
 		        <Nav vertical>
-		          <NavLink href="#">Link</NavLink> <NavLink href="#">Link</NavLink> <NavLink href="#">Another Link</NavLink> <NavLink disabled href="#">Disabled Link</NavLink>
+		          <NavLink className={ styles.links } href="#">Link</NavLink> 
+		          <NavLink className={ styles.links } href="#">Link</NavLink> 
+		          <NavLink className={ styles.links } href="#">Another Link</NavLink> 
+		          <NavLink className={ styles.links } disabled href="#">Disabled Link</NavLink>
 		        </Nav>
 		    </div>
 		)
