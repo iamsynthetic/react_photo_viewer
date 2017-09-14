@@ -1,13 +1,13 @@
 /*
  colors
-	232B2A - grey
-	C6CDEB - light grey
-	0E1211 - dark grey
-	292A30 - blue grey
-	D2E8B9 - cream
-	17A39E - light green
-	66C423 - green
-	ED2B4D - red
+	#232B2A - grey
+	#C6CDEB - light grey
+	#0E1211 - dark grey
+	#292A30 - blue grey
+	#D2E8B9 - cream
+	#17A39E - light green
+	#66C423 - green
+	#ED2B4D - red
 
 */
 
@@ -17,8 +17,23 @@ body{
 	width:100%;
 }
 
-.container{
+.app-container{
 	width:100%;
+}
+
+.topnavContainer{
+	width:100%;
+	background-color:#ffffff;
+	height:40px;
+}
+
+.topnavItem{
+	list-style:none;
+}
+.topnavLink{
+	margin-left:20px;
+	font-size:14px;
+	color:#C6CDEB;
 }
 
 .headline {

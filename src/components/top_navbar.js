@@ -3,38 +3,35 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import styles from '../style/styles.css';
-
-import { Nav, NavItem, NavDropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button, CardBlock, Card } from 'reactstrap';
 
 class TopNavbar extends Component {
+	constructor(props) {
+		super(props);
+	    this.toggle = this.toggle.bind(this);
+	    //this.toggle2 = this.toggle2.bind(this);
+	    this.state = { collapse: false };
+	}
+  	// toggle() {
+   //  	this.setState({ isOpen: !this.state.isOpen });
+  	// }
 
+  	toggle() {
+    	this.setState({ collapse: !this.state.collapse });
+  	}
+	  
 	render(){
 		return (
-			<div>
-		        <p className={ styles.headline }>List Based</p>
-		        <Nav vertical>
-		        	<NavItem>
-		            <NavLink className={ styles.links } href="#">Link</NavLink>
-		          </NavItem>
-		          <NavItem>
-		            <NavLink className={ styles.links } href="#">Link</NavLink>
-		          </NavItem>
-		          <NavItem>
-		            <NavLink className={ styles.links } href="#">Another Link</NavLink>
-		          </NavItem>
-		          <NavItem>
-		            <NavLink className={ styles.links } disabled href="#">Disabled Link</NavLink>
-		          </NavItem>
-		        </Nav>
-		        <hr />
-		        <p className={ styles.headline }>Link based</p>
-		        <Nav vertical>
-		          <NavLink className={ styles.links } href="#">Link</NavLink> 
-		          <NavLink className={ styles.links } href="#">Link</NavLink> 
-		          <NavLink className={ styles.links } href="#">Another Link</NavLink> 
-		          <NavLink className={ styles.links } disabled href="#">Disabled Link</NavLink>
-		        </Nav>
-		    </div>
+			<div className={ styles.topnavContainer }>
+		        <Navbar color="faded" light toggleable>
+			        <Button color="primary" onClick={this.toggle}>Toggle</Button>
+					<NavLink className={ styles.topnavLink } href="#">Link</NavLink>
+				    <NavLink className={ styles.topnavLink } href="#">Link</NavLink>
+				   	<NavLink className={ styles.topnavLink } href="#">Another Link</NavLink>
+				   	<NavLink className={ styles.topnavLink } disabled href="#">Disabled Link</NavLink>
+				</Navbar>
+      		</div>
+	
 		)
 	}
 }

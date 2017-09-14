@@ -40,4 +40,4 @@ ReactDOM.render(
           	</div>
 		</BrowserRouter>
 	</Provider>
-	, document.querySelector('.blah'));
+	, document.querySelector('.app-container'));
