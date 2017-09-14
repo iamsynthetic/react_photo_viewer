@@ -3,18 +3,14 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import styles from '../style/styles.css';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button, CardBlock, Card } from 'reactstrap';
+import { Glyphicon, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button, CardBlock, Card } from 'reactstrap';
 
 class TopNavbar extends Component {
 	constructor(props) {
 		super(props);
 	    this.toggle = this.toggle.bind(this);
-	    //this.toggle2 = this.toggle2.bind(this);
 	    this.state = { collapse: false };
 	}
-  	// toggle() {
-   //  	this.setState({ isOpen: !this.state.isOpen });
-  	// }
 
   	toggle() {
     	this.setState({ collapse: !this.state.collapse });
@@ -28,10 +24,14 @@ class TopNavbar extends Component {
 					<NavLink className={ styles.topnavLink } href="#">Link</NavLink>
 				    <NavLink className={ styles.topnavLink } href="#">Link</NavLink>
 				   	<NavLink className={ styles.topnavLink } href="#">Another Link</NavLink>
-				   	<NavLink className={ styles.topnavLink } disabled href="#">Disabled Link</NavLink>
+				   	<Button  className={[ styles.topnavButton, "pull-right" ]} onClick={() => {alert('do stuff')}}>
+					    test
+					</Button>
+					<NavLink className={[ styles.topnavLink, "pull-right" ]}  disabled href="#">Disabled Link</NavLink>
 				</Navbar>
+				
       		</div>
-	
+      		
 		)
 	}
 }

@@ -23,12 +23,12 @@ ReactDOM.render(
 		<BrowserRouter>
 			<div>
 				<TopNavbar />
-				<Container>
+				<Container fluid>
         			<Row>
-          				<Col className={ styles.moduleColor } lg="6">
-          					<MainNavigation />
+          				<Col className={ styles.moduleColor } sm="2">
+          					<MainNavigation/>
           				</Col>
-          				<Col lg="6">
+          				<Col sm="10">
           					<Switch>
 								<Route path="/photos/new" component={PhotosNew} />
 								<Route path="/photos/:id" component={PhotosShow} />

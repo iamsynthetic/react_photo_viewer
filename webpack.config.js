@@ -14,7 +14,8 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/, query: { presets: ['react', 'es2015', 'stage-1']}},
-      { test: /\.css$/,loaders: ['style','css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]&sourceMap&-minimize']}
+      { test: /\.css$/,loaders: ['style','css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]&sourceMap&-minimize']},
+      { test: /\.scss$/, loaders: ['style','css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]','resolve-url','sass']}
     ]
   },  
   // module: {

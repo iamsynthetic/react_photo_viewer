@@ -4,6 +4,10 @@
 	#C6CDEB - light grey
 	#0E1211 - dark grey
 	#292A30 - blue grey
+	#525460 - blue grey shade lighter
+	#252A49 - blue grey more saturation
+	#454D7C - blue grey slightly more saturation
+	#ACB0C9 - blue grey lighter
 	#D2E8B9 - cream
 	#17A39E - light green
 	#66C423 - green
@@ -12,9 +16,10 @@
 */
 
 
-body{
+html, body{
 	background-color:#292A30;
 	width:100%;
+	height:100%;
 }
 
 .app-container{
@@ -23,8 +28,8 @@ body{
 
 .topnavContainer{
 	width:100%;
-	background-color:#ffffff;
 	height:40px;
+	background-color:#000000;
 }
 
 .topnavItem{
@@ -35,6 +40,53 @@ body{
 	font-size:14px;
 	color:#C6CDEB;
 }
+
+.mainNavigation {
+	height: calc(100vh - 40px);
+	max-width:200px;
+	min-width:200px;
+	background-color:#ACB0C9;
+}
+
+.moduleColor {
+	background-color:#ED2B4D;
+	max-width:200px;
+	min-width:200px;
+}
+
+
+.topnavButton {
+   border-top: 1px solid #878ba1;
+   background: #747685;
+   background: -webkit-gradient(linear, left top, left bottom, from(#7e8191), to(#747685));
+   background: -webkit-linear-gradient(top, #7e8191, #747685);
+   background: -moz-linear-gradient(top, #7e8191, #747685);
+   background: -ms-linear-gradient(top, #7e8191, #747685);
+   background: -o-linear-gradient(top, #7e8191, #747685);
+   padding: 7px 14px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 12px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.topnavButton:hover {
+   border-top-color: #75798a;
+   background: #75798a;
+   color: #d5daf5;
+   }
+.topnavButton:active {
+   border-top-color: #6a6e80;
+   background: #6a6e80;
+   }
+
 
 .headline {
   color: #ffffff;
@@ -49,9 +101,6 @@ body{
 	margin-right:5px;
 	margin-top:0px;
 	margin-bottom:0px;
-}
-.moduleColor {
-	background-color:#ED2B4D;
 }
 
 h1.page-header {

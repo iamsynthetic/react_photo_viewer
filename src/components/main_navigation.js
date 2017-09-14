@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import styles from '../style/styles.css';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Nav, NavItem, NavLink } from 'reactstrap';
 
 class MainNavigation extends Component {
 
@@ -23,21 +23,22 @@ class MainNavigation extends Component {
 
 	render(){
 		return (
-			<div className="container">
-			  <Navbar color="faded" light toggleable>
-          <NavbarToggler right onClick={this.toggle} />
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
+		  <div className={ styles.mainNavigation }>
+        <p>List Based</p>
+        <Nav vertical>
+          <NavItem>
+            <NavLink href="#">Link</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#">Link</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#">Another Link</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink disabled href="#">Disabled Link</NavLink>
+          </NavItem>
+        </Nav>
       </div>
 		)
 	}
