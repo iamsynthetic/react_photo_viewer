@@ -1,23 +1,26 @@
 /*
  colors
-	#232B2A - grey
-	#C6CDEB - light grey
-	#0E1211 - dark grey
-	#292A30 - blue grey
-	#525460 - blue grey shade lighter
-	#252A49 - blue grey more saturation
-	#454D7C - blue grey slightly more saturation
-	#ACB0C9 - blue grey lighter
-	#D2E8B9 - cream
-	#17A39E - light green
-	#66C423 - green
-	#ED2B4D - red
+	#EBECE8 - off white           - light shade    - text color
+	#1B95AD - eastern blue        - light accent   - brings attention to design elements
+	#5F6576 - shuttle gray        - eye catching   - main identy color
+	#E03A80 - cerise (pink)       - bright accent  - alternative to light accent
+	#95E474 - pastel  green       - bright accent  - alternative to light accent
+	#E5D752 - confetti (orange)	  - bright accent  - alternative to light accent
+	#26272A - shark blue          - base shade     - main background color
+	#1a1a1c - shade of shark blue - dark shade     - interface elements
+	#333438 - shade of shark blue - light shade    - interface elements
+	#3C3D45 - shade of shark blue - lightest shade - interface elements
+
+	#1B95AD - eastern blue        - default link color
+	#10cff4 - bright turquoise    - hover / active link color
+ 
+
 
 */
 
 
 html, body{
-	background-color:#292A30;
+	background-color:#1a1a1c;
 	width:100%;
 	height:100%;
 }
@@ -26,10 +29,11 @@ html, body{
 	width:100%;
 }
 
+/* ////////////////////////////////////////////////////////////////// TOP MAIN NAV ////////////////////////////////////////////////////////////////////////////// */
 .topnavContainer{
 	width:100%;
 	height:40px;
-	background-color:#000000;
+	background-color:#333438;
 }
 
 .topnavItem{
@@ -38,24 +42,57 @@ html, body{
 .topnavLink{
 	margin-left:20px;
 	font-size:14px;
-	color:#C6CDEB;
+	color:#3C3D45;
 }
+/* ////////////////////////////////////////////////////////////////// END TOP MAIN NAV /////////////////////////////////////////////////////////////////////////// */
 
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////// LEFT SIDE MAIN NAV ///////////////////////////////////////////////////////////////////////// */
+/* left side main nav */
 .mainNavigation {
 	height: calc(100vh - 40px);
 	max-width:200px;
 	min-width:200px;
-	background-color:#ACB0C9;
+	background-color:#1a1a1c;
+}
+
+/* left side main nav buttons */
+.mainNavigationLinks > li > a {
+	color: #1B95AD;
+}
+
+.mainNavigationLinks > li > a:focus {
+	color: #10cff4;
+	background-color:transparent;
+}
+.mainNavigationLinks > li > a:hover {
+	color: #10cff4;
+	background-color:transparent;
+}
+
+.mainNavigationLinks > li > a:active {
+	color: #10cff4;
+	background-color:transparent;
 }
 
 .moduleColor {
-	background-color:#ED2B4D;
 	max-width:200px;
 	min-width:200px;
 }
 
+/* ////////////////////////////////////////////////////////////////// END - LEFT SIDE MAIN NAV ///////////////////////////////////////////////////////////////////// */
 
-.topnavButton {
+/*.topnavButton {
    border-top: 1px solid #878ba1;
    background: #747685;
    background: -webkit-gradient(linear, left top, left bottom, from(#7e8191), to(#747685));
@@ -76,8 +113,8 @@ html, body{
    font-family: Helvetica, Arial, Sans-Serif;
    text-decoration: none;
    vertical-align: middle;
-   }
-.topnavButton:hover {
+   }*/
+/*.topnavButton:hover {
    border-top-color: #75798a;
    background: #75798a;
    color: #d5daf5;
@@ -86,7 +123,7 @@ html, body{
    border-top-color: #6a6e80;
    background: #6a6e80;
    }
-
+*/
 
 .headline {
   color: #ffffff;
@@ -94,14 +131,14 @@ html, body{
   font-family: helvetica, arial, sans-serif;
   font-weight: 600;
 }
-.links {
-	color: #17A39E;
+/*.links {
+	color: #3C3D45;
 	text-decoration: underline;
 	margin-left:5px;
 	margin-right:5px;
 	margin-top:0px;
 	margin-bottom:0px;
-}
+}*/
 
 h1.page-header {
     margin-top: -5px;
@@ -125,7 +162,7 @@ h1.page-header {
 	outline: none;
 }
 
-.side-menu {
+/*.side-menu {
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -252,7 +289,7 @@ h1.page-header {
 /* Main body section */
 .side-body {
 	margin-left: 310px;
-}
+}*/
 /* small screen */
 @media (max-width: 768px) {
 	.side-menu {
@@ -324,17 +361,17 @@ h1.page-header {
 	}
 	/* Slide side menu*/
 	/* Add .absolute-wrapper.slide-in for scrollable menu -> see top comment */
-	.side-menu-container > .navbar-nav.slide-in {
+	/*.side-menu-container > .navbar-nav.slide-in {
 		-moz-animation: slidein 300ms forwards;
 		-o-animation: slidein 300ms forwards;
 		-webkit-animation: slidein 300ms forwards;
 		animation: slidein 300ms forwards;
 		-webkit-transform-style: preserve-3d;
 		transform-style: preserve-3d;
-	}
-	.side-menu-container > .navbar-nav {
+	}*/
+	/*.side-menu-container > .navbar-nav {*/
 		/* Add position:absolute for scrollable menu -> see top comment */
-		position: fixed;
+		/*position: fixed;
 		left: -300px;
 		width: 300px;
 		top: 43px;
@@ -348,7 +385,7 @@ h1.page-header {
 		animation: slideout 300ms forwards;
 		-webkit-transform-style: preserve-3d;
 		transform-style: preserve-3d;
-	}
+	}*/
 	@-moz-keyframes bodyslidein {
 		0% {
 			left: 0;
@@ -398,7 +435,7 @@ h1.page-header {
 		}
 	}
 	/* Slide side body*/
-	.side-body {
+	/*.side-body {
 		margin-left: 5px;
 		margin-top: 70px;
 		position: relative;
@@ -416,7 +453,7 @@ h1.page-header {
 		animation: bodyslidein 300ms forwards;
 		-webkit-transform-style: preserve-3d;
 		transform-style: preserve-3d;
-	}
+	}*/
 	/* Hamburger */
 	.navbar-toggle-sidebar {
 		border: 0;

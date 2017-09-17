@@ -25,18 +25,21 @@ class MainNavigation extends Component {
 		return (
 		  <div className={ styles.mainNavigation }>
         <p>List Based</p>
-        <Nav vertical>
+        <Nav vertical className={ styles.mainNavigationLinks }>
           <NavItem>
-            <NavLink href="#">Link</NavLink>
+            <Link to="/">Home</Link>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Link</NavLink>
+            <Link to="/photos/new">New Photo</Link>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Another Link</NavLink>
+            <Link to="/photos/3">Photo 3</Link>
           </NavItem>
           <NavItem>
-            <NavLink disabled href="#">Disabled Link</NavLink>
+            <Link to="/photos/4">Photo 4</Link>
+          </NavItem>
+          <NavItem>
+            <Link to="/photos/5">Photo 5</Link>
           </NavItem>
         </Nav>
       </div>
