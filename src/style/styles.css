@@ -13,10 +13,72 @@
 
 	#1B95AD - eastern blue        - default link color
 	#10cff4 - bright turquoise    - hover / active link color
- 
-
 
 */
+
+/*
+break points
+
+tablet
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {  }
+
+tablet portrait
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { }
+
+tablet landscape
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {  }
+
+mobile
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { }
+
+mobile portrait
+@media only screen and (max-device-width : 320px) { }
+
+mobile landscape
+@media only screen and (min-device-width : 321px) { }
+
+*/
+
+
+
+/* ////////////////////////////////////////////////////////////////// MEDIA QUERIES //////////////////////////////////////////////////////////////////////// */
+
+/* bigger than tablet */
+@media (min-width : 768px){  
+	.mainNavigation {
+    	width: inherit;
+    	min-width: 250px;
+    	max-width: 250px;
+		height: calc(100vh - 40px);
+      	background-color:#1a1a1c;
+      	position:relative;
+  	}
+  	/*.sidebar2 {
+    	min-width: 160px;
+      	max-width: 160px;
+      	min-height: 100%;
+      	position:relative;
+  	}*/
+  	.mainContentArea {
+  		width:calc(100% - 250px);
+  		background-color:#ffff00;
+  	}
+}
+
+/* mobile */
+@media (max-width: 768px){
+	.mainNavigation {
+    	width: inherit;
+    	background-color:#1a1a1c;
+    	position:relative;
+  	}
+}
+
+/* ////////////////////////////////////////////////////////////////// END MEDIA QUERIES //////////////////////////////////////////////////////////////////// */
+
+
+
+
 
 
 html, body{
@@ -28,6 +90,11 @@ html, body{
 .app-container{
 	width:100%;
 }
+
+
+
+
+
 
 /* ////////////////////////////////////////////////////////////////// TOP MAIN NAV ////////////////////////////////////////////////////////////////////////////// */
 .topnavContainer{
@@ -58,13 +125,23 @@ html, body{
 
 
 /* ////////////////////////////////////////////////////////////////// LEFT SIDE MAIN NAV ///////////////////////////////////////////////////////////////////////// */
+/* test */
+
+/*.mainNavigation {
+	background-color:#1a1a1c;
+	
+	height: calc(100vh - 40px);
+}
+*/
+/* end test */
+
 /* left side main nav */
-.mainNavigation {
+/*.mainNavigation {
 	height: calc(100vh - 40px);
 	max-width:200px;
 	min-width:200px;
 	background-color:#1a1a1c;
-}
+}*/
 
 /* left side main nav buttons */
 .mainNavigationLinks > li > a {
@@ -85,12 +162,41 @@ html, body{
 	background-color:transparent;
 }
 
-.moduleColor {
+/*.moduleColor {
 	max-width:200px;
 	min-width:200px;
-}
+}*/
 
 /* ////////////////////////////////////////////////////////////////// END - LEFT SIDE MAIN NAV ///////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////// MAIN CONTENT AREA ///////////////////////////////////////////////////////////////////////// */
+
+.mainContentArea {
+	background-color:#3C3D45;
+}
+
+/* ////////////////////////////////////////////////////////////////// END - MAIN CONTENT AREA ///////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
 
 /*.topnavButton {
    border-top: 1px solid #878ba1;

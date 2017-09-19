@@ -23,7 +23,8 @@ class MainNavigation extends Component {
 
 	render(){
 		return (
-		  <div className={ styles.mainNavigation }>
+		  /*<div className={ styles.mainNavigation }>*/
+      <div>
         <p>List Based</p>
         <Nav vertical className={ styles.mainNavigationLinks }>
           <NavItem>

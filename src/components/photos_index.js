@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchPhotos } from '../actions';
+import styles from '../style/styles.css';
 
 class PhotosIndex extends Component {
 	componentDidMount(){
