@@ -38,9 +38,10 @@ mobile landscape
 @media (min-width : 768px){  
 	.mainNavigation {
     	width: inherit;
-    	min-width: 250px;
-    	max-width: 250px;
+    	min-width: 150px;
+    	max-width: 150px;
 		height: calc(100vh - 40px);
+		margin-top:40px;
       	background-color:#1a1a1c;
       	position:relative;
   	}
@@ -51,7 +52,7 @@ mobile landscape
       	position:relative;
   	}*/
   	.mainContentArea {
-  		width:calc(100% - 250px);
+  		width:calc(100% - 150px);
   		background-color:#ffff00;
   	}
 }
@@ -134,9 +135,16 @@ html, body{
 	background-color:#1a1a1c;
 }*/
 
+.mainNavigationLinkIcons{
+	font-size:20px;
+}
+
 /* left side main nav buttons */
 .mainNavigationLinks > li > a {
+	text-align:center;
 	color: #1B95AD;
+	height:70px;
+
 }
 
 .mainNavigationLinks > li > a:focus {

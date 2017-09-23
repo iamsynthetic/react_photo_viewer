@@ -10,6 +10,7 @@ import thunk from 'redux-thunk';
 import reducers from './reducers';
 import TopNavbar from './components/top_navbar';
 import MainNavigation from './components/main_navigation';
+import HomePage from './components/home_page';
 import PhotosIndex from './components/photos_index';
 import PhotosNew from './components/photos_new';
 import PhotosShow from './components/photos_show';
@@ -54,7 +55,7 @@ ReactDOM.render(
 		          		<Switch>
 							<Route path="/photos/new" component={PhotosNew} />
 							<Route path="/photos/:id" component={PhotosShow} />
-							<Route path="/" component={PhotosIndex} />
+							<Route path="/" component={HomePage} />
 						</Switch>
 		          	</Col>
 		        </Row>

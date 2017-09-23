@@ -26,29 +26,27 @@ class MainNavigation extends Component {
 		return (
 		  /*<div className={ styles.mainNavigation }>*/
       <div>
-        <p>List Based</p>
         <Nav vertical className={ styles.mainNavigationLinks }>
           <NavItem>
-            <Link to="/"><FontAwesome name="home" size="2x"/><br />Home</Link>
+            <Link to="/"><FontAwesome className={ styles.mainNavigationLinkIcons } name="home"/><br />Home</Link>
           </NavItem>
           <NavItem>{/* briefcase */}
-            <Link to="/photos/new"><FontAwesome name="code" size="2x"/><br />Work</Link>
-          }
+            <Link to="/photos/new"><FontAwesome className={ styles.mainNavigationLinkIcons } name="code" /><br />Work</Link>
           </NavItem>
           <NavItem>
-            <Link to="/photos/3"><FontAwesome name="users" size="2x"/><br />Team</Link>
+            <Link to="/photos/3"><FontAwesome className={ styles.mainNavigationLinkIcons } name="users" /><br />Team</Link>
           </NavItem>
           <NavItem>
-            <Link to="/photos/4"><FontAwesome name="wrench" size="2x"/><br />Services</Link>
+            <Link to="/photos/4"><FontAwesome className={ styles.mainNavigationLinkIcons } name="wrench" /><br />Services</Link>
           </NavItem>
           <NavItem>
-            <Link to="/photos/5"><FontAwesome name="building" size="2x"/><br />Workplace</Link>
+            <Link to="/photos/5"><FontAwesome className={ styles.mainNavigationLinkIcons } name="building" /><br />Workplace</Link>
           </NavItem>
           <NavItem>
-            <Link to="/photos/5"><FontAwesome name="newspaper-o" size="2x"/><br />Blog</Link>
+            <Link to="/photos/5"><FontAwesome className={ styles.mainNavigationLinkIcons } name="newspaper-o" /><br />Blog</Link>
           </NavItem>
           <NavItem>
-            <Link to="/photos/5"><FontAwesome name="map-marker" size="2x"/><br />Contact</Link>
+            <Link to="/photos/5"><FontAwesome className={ styles.mainNavigationLinkIcons } name="map-marker" /><br />Contact</Link>
           </NavItem>
         </Nav>
       </div>
