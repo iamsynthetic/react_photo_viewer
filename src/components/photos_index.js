@@ -28,7 +28,7 @@ class PhotosIndex extends Component {
 	render(){
 		
 		return (
-			<div>
+			<div className={ styles.photosAddPhoto }>
 				<div className="text-xs-right">
 					<Link className="btn btn-primary" to="/photos/new">
 						Add a Photo

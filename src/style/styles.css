@@ -10,33 +10,24 @@
 	#1a1a1c - shade of shark blue - dark shade     - interface elements
 	#333438 - shade of shark blue - light shade    - interface elements
 	#3C3D45 - shade of shark blue - lightest shade - interface elements
-
 	#1B95AD - eastern blue        - default link color
 	#10cff4 - bright turquoise    - hover / active link color
-
 */
 
 /*
 break points
-
 tablet
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {  }
-
 tablet portrait
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { }
-
 tablet landscape
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {  }
-
 mobile
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) { }
-
 mobile portrait
 @media only screen and (max-device-width : 320px) { }
-
 mobile landscape
 @media only screen and (min-device-width : 321px) { }
-
 */
 
 
