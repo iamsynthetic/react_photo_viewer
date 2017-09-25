@@ -26,7 +26,7 @@ class PhotosIndex extends Component {
 	}
 
 	render(){
-		
+		console.log(this.props.photos);
 		return (
 			<div className={ styles.photosAddPhoto }>
 				<div className="text-xs-right">

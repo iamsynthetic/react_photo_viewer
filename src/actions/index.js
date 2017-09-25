@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const FETCH_PROFILE_THUMBS = 'fetch_profile_thumbs';
+export const FETCH_PROFILE_IMAGES = 'fetch_profile_images';
 export const FETCH_PHOTOS = 'fetch_photos';
 export const CREATE_PHOTO = 'create_photo';
 export const DELETE_PHOTO = 'delete_photo';
@@ -9,11 +9,11 @@ export const DELETE_PHOTO = 'delete_photo';
 //resource - https://github.com/typicode/json-server
 const ROOT_URL = 'http://localhost:3000'
 
-export function fetchProfileThumbs(){
-	const request = axios.get(`${ROOT_URL}/profilethumbs`)
+export function fetchProfileImages(){
+	const request = axios.get(`${ROOT_URL}/profileimages`)
 
 	return {
-		type: FETCH_PROFILE_THUMBS,
+		type: FETCH_PROFILE_IMAGES,
 		payload: request
 	};
 }

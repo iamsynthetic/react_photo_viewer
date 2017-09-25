@@ -31,7 +31,7 @@ class MainNavigation extends Component {
             <Link to="/"><FontAwesome className={ styles.mainNavigationLinkIcons } name="home"/><br />Home</Link>
           </NavItem>
           <NavItem>{/* briefcase */}
-            <Link to="/photos/new"><FontAwesome className={ styles.mainNavigationLinkIcons } name="code" /><br />Work</Link>
+            <Link to="/photos"><FontAwesome className={ styles.mainNavigationLinkIcons } name="code" /><br />Work</Link>
           </NavItem>
           <NavItem>
             <Link to="/photos/3"><FontAwesome className={ styles.mainNavigationLinkIcons } name="users" /><br />Team</Link>
@@ -43,7 +43,7 @@ class MainNavigation extends Component {
             <Link to="/photos/5"><FontAwesome className={ styles.mainNavigationLinkIcons } name="building" /><br />Workplace</Link>
           </NavItem>
           <NavItem>
-            <Link to="/photos/5"><FontAwesome className={ styles.mainNavigationLinkIcons } name="newspaper-o" /><br />Blog</Link>
+            <Link to="/blog"><FontAwesome className={ styles.mainNavigationLinkIcons } name="newspaper-o" /><br />Blog</Link>
           </NavItem>
           <NavItem>
             <Link to="/photos/5"><FontAwesome className={ styles.mainNavigationLinkIcons } name="map-marker" /><br />Contact</Link>

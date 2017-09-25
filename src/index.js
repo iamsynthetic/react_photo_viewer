@@ -10,10 +10,7 @@ import thunk from 'redux-thunk';
 import reducers from './reducers';
 import TopNavbar from './components/top_navbar';
 import MainNavigation from './components/main_navigation';
-import HomePage from './components/home_page';
-import PhotosIndex from './components/photos_index';
-import PhotosNew from './components/photos_new';
-import PhotosShow from './components/photos_show';
+import Routes from './components/routes';
 import { Container, Row, Col } from 'reactstrap';
 import { Nav, NavItem, NavLink, Navbar, Button } from 'reactstrap';
 import styles from './style/styles.css';
@@ -23,27 +20,8 @@ const createStoreWithMiddleware = applyMiddleware(promise, multi, thunk)(createS
 ReactDOM.render(
 	<Provider store={createStoreWithMiddleware(reducers)}>
 		<BrowserRouter>
-			{/*
-			<div>
-				<TopNavbar />
-				<Container fluid>
-        			<Row>
-          				<Col className={ styles.moduleColor } sm="2">
-          					<MainNavigation/>
-          				</Col>
-          				<Col className={ styles.mainContentBg } sm="10">
-          					<Switch>
-								<Route path="/photos/new" component={PhotosNew} />
-								<Route path="/photos/:id" component={PhotosShow} />
-								<Route path="/" component={PhotosIndex} />
-							</Switch>
-          				</Col>
-          			</Row>
-          		</Container>
-          	</div>
-          */}
-         	
-         	<Container fluid>
+			
+			<Container fluid>
          		<Row>
          			<TopNavbar />
          		</Row>
@@ -52,11 +30,13 @@ ReactDOM.render(
 		          		<MainNavigation/>
 		          	</Col>
 		          	<Col className={ styles.mainContentArea } sm="10">
-		          		<Switch>
+		          		<Routes/>
+		          		{/*<Switch>
 							<Route path="/photos/new" component={PhotosNew} />
 							<Route path="/photos/:id" component={PhotosShow} />
 							<Route path="/" component={HomePage} />
 						</Switch>
+						*/}
 		          	</Col>
 		        </Row>
          	</Container>
