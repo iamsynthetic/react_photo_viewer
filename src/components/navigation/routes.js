@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
-import HomePage from './home_page';
-import PhotosIndex from './photos_index';
-import PhotosNew from './photos_new';
-import PhotosShow from './photos_show';
+import HomePage from '../pages/home/home_page';
+import PhotosIndex from '../pages/gallery/photos_index';
+import PhotosNew from '../pages/gallery/photos_new';
+import PhotosShow from '../pages/gallery/photos_show';
 
 class Routes extends Component {
 

@@ -53,7 +53,7 @@ mobile landscape
   	}*/
   	.mainContentArea {
   		width:calc(100% - 150px);
-  		background-color:#ffff00;
+  		/*background-color:#ffff00;*/
   	}
 }
 
@@ -92,7 +92,8 @@ html, body{
 .topnavContainer{
 	width:100%;
 	height:40px;
-	background-color:#333438;
+	/*background-color:#333438;*/
+	background-color:#1a1a1c;
 }
 
 .topnavItem{
@@ -182,7 +183,23 @@ html, body{
 /* ////////////////////////////////////////////////////////////////// MAIN CONTENT AREA ///////////////////////////////////////////////////////////////////////// */
 
 .mainContentArea {
-	background-color:#3C3D45;
+	/*background-color:#5F6576;*/
+}
+
+.mainContentArea_navContainer{
+	width:100%;
+	height:40px;
+	/*background-color:#333438;*/
+	background-color:#1a1a1c;
+}
+
+.mainContentArea_navItem{
+	list-style:none;
+}
+.mainContentArea_navLink{
+	margin-left:20px;
+	font-size:14px;
+	color:#3C3D45;
 }
 
 /* ////////////////////////////////////////////////////////////////// END - MAIN CONTENT AREA ///////////////////////////////////////////////////////////////////// */

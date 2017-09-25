@@ -26,36 +26,36 @@
     {
       "id": 1,
       "title": "profile thumb 1",
-      "url": "http://placehold.it/600/771796",
-      "thumbnailUrl": "src/images/profile_thumbs/batman.jpg",
+      "url": "src/images/profile_images/batman.jpg",
+      "thumbnailUrl": "src/images/profile_thumbs/batman_thumb.jpg",
       "author": "batman"
     },
     {
       "id": 2,
       "title": "profile thumb 2",
-      "url": "http://placehold.it/600/771796",
-      "thumbnailUrl": "src/images/profile_thumbs/daredevil.jpg",
+      "url": "src/images/profile_images/daredevil.jpg",
+      "thumbnailUrl": "src/images/profile_thumbs/daredevil_thumb.jpg",
       "author": "daredevil"
     },
     {
       "id": 3,
       "title": "profile thumb 3",
-      "url": "http://placehold.it/600/771796",
-      "thumbnailUrl": "src/images/profile_thumbs/gambit.jpg",
+      "url": "src/images/profile_images/gambit.jpg",
+      "thumbnailUrl": "src/images/profile_thumbs/gambit_thumb.jpg",
       "author": "gambit"
     },
     {
       "id": 4,
       "title": "profile thumb 4",
-      "url": "http://placehold.it/600/771796",
-      "thumbnailUrl": "src/images/profile_thumbs/nightwing.jpg",
+      "url": "src/images/profile_images/nightwing.jpg",
+      "thumbnailUrl": "src/images/profile_thumbs/nightwing_thumb.jpg",
       "author": "nightwing"
     },
     {
       "id": 5,
       "title": "profile thumb 5",
-      "url": "http://placehold.it/600/771796",
-      "thumbnailUrl": "src/images/profile_thumbs/wolverine.jpg",
+      "url": "src/images/profile_images/wolverine.jpg",
+      "thumbnailUrl": "src/images/profile_thumbs/wolverine_thumb.jpg",
       "author": "wolverine"
     }
   ],

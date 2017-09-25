@@ -2,7 +2,7 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import styles from '../style/styles.scss';
+import styles from '../../style/styles.scss';
 
 import { Collapse, Navbar, NavbarToggler, NavBrand, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 

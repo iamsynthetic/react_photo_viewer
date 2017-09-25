@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { fetchPhotos, deletePhoto } from '../actions';
+import { fetchPhotos, deletePhoto } from '../../../actions';
 
 class PhotosShow extends Component {
 

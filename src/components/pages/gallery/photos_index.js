@@ -2,22 +2,22 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchProfileImages } from '../actions';
-import styles from '../style/styles.css';
+import { fetchPhotos } from '../../../actions';
+import styles from '../../../style/styles.css';
 
-class HomePage extends Component {
+class PhotosIndex extends Component {
 	componentDidMount(){
-		this.props.fetchProfileImages();
+		this.props.fetchPhotos();
 	}
 
 	renderPhotos(){
-		return _.map(this.props.profileimages, profimage => {
+		return _.map(this.props.photos, photo => {
 			return (
-				<li className="list-group-item" key={profimage.id}>
+				<li className="list-group-item" key={photo.id}>
 					<div>
-						<img src={profimage.thumbnailUrl} />
-						<Link to={`/profileimages/${profimage.id}`}>
-						{profimage.title}
+						<img src={photo.thumbnailUrl} />
+						<Link to={`/photos/${photo.id}`}>
+						{photo.title}
 						</Link>
 					</div>
 				</li>
@@ -26,7 +26,7 @@ class HomePage extends Component {
 	}
 
 	render(){
-		
+		console.log(this.props.photos);
 		return (
 			<div className={ styles.photosAddPhoto }>
 				<div className="text-xs-right">
@@ -44,7 +44,7 @@ class HomePage extends Component {
 }
 
 function mapStateToProps(state){
-	return { profileimages: state.profileimages }
+	return { photos: state.photos }
 }
 
-export default connect(mapStateToProps, {fetchProfileImages})(HomePage);
+export default connect(mapStateToProps, {fetchPhotos})(PhotosIndex);
