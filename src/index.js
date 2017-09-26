@@ -22,21 +22,21 @@ ReactDOM.render(
 		<BrowserRouter>
 			
 			<Container fluid>
-         		<Row>
+         		{/*<Row>
          			<TopNavbar />
          		</Row>
+         		*/}
          		<Row>
 		          	<Col className={ styles.mainNavigation } sm="2">
 		          		<MainNavigation/>
 		          	</Col>
 		          	<Col className={ styles.mainContentArea } sm="10">
-		          		<Routes/>
-		          		{/*<Switch>
-							<Route path="/photos/new" component={PhotosNew} />
-							<Route path="/photos/:id" component={PhotosShow} />
-							<Route path="/" component={HomePage} />
-						</Switch>
-						*/}
+		          		<Row>
+		          			<TopNavbar />
+		          		</Row>
+		          		<Row>
+		          			<Routes/>
+		          		</Row>
 		          	</Col>
 		        </Row>
          	</Container>

@@ -1,5 +1,6 @@
+/* ////////////////////////////////////////////////////////////////// COLOURS //////////////////////////////////////////////////////////////////////// */
+
 /*
- colors
 	#EBECE8 - off white           - light shade    - text color
 	#1B95AD - eastern blue        - light accent   - brings attention to design elements
 	#5F6576 - shuttle gray        - eye catching   - main identy color
@@ -14,8 +15,10 @@
 	#10cff4 - bright turquoise    - hover / active link color
 */
 
+/* ////////////////////////////////////////////////////////////////// BREAK POINTS //////////////////////////////////////////////////////////////////////// */
+
 /*
-break points
+
 tablet
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {  }
 tablet portrait
@@ -32,18 +35,26 @@ mobile landscape
 
 
 
+/* ////////////////////////////////////////////////////////////////// FONTS //////////////////////////////////////////////////////////////////////// */
+
+/*
+font-family: 'Droid Serif', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
 /* ////////////////////////////////////////////////////////////////// MEDIA QUERIES //////////////////////////////////////////////////////////////////////// */
 
 /* bigger than tablet */
 @media (min-width : 768px){  
 	.mainNavigation {
-    	width: inherit;
-    	min-width: 150px;
-    	max-width: 150px;
-		height: calc(100vh - 40px);
-		margin-top:40px;
-      	background-color:#1a1a1c;
-      	position:relative;
+   		width: inherit;
+	    min-width: 150px;
+	    max-width: 150px;
+	    height: calc(100vh);
+	    /* margin-top: 40px; */
+	    background-color: #26272A;
+	    position: relative;
   	}
   	/*.sidebar2 {
     	min-width: 160px;
@@ -178,7 +189,17 @@ html, body{
 
 
 
+/* ////////////////////////////////////////////////////////////////// MISC. INTERFACE ELEMENTS /////////////////////////////////////////////////////////////////// */
 
+.roundedBr {
+    border-radius: 50%;
+}
+
+.softShadow {
+	-webkit-box-shadow: 10px 10px 35px -14px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 35px -14px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 35px -14px rgba(0,0,0,0.75);
+}
 
 /* ////////////////////////////////////////////////////////////////// MAIN CONTENT AREA ///////////////////////////////////////////////////////////////////////// */
 
@@ -205,6 +226,47 @@ html, body{
 /* ////////////////////////////////////////////////////////////////// END - MAIN CONTENT AREA ///////////////////////////////////////////////////////////////////// */
 
 
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////// HOME PAGE ////////////////////////////////////////////////////////////////////////////////// */
+
+/* menu */
+
+.homeProfileMenu{
+	/*position:relative;
+	width:100%;
+	height:100px;*/
+	/*background-color:#3C3D45;*/
+}
+
+.homeProfileMenuNav
+{
+	height:100px;
+	list-style-type:none;
+	text-align:center;
+	position:relative;
+}
+
+.homeProfileMenuNav > p {
+	
+}
+
+.homeProfileMenuImages {
+	border-radius: 50%;
+	width:50px;
+	height:50px;
+	margin-top:14px;
+	-webkit-box-shadow: 10px 10px 35px -14px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 35px -14px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 35px -14px rgba(0,0,0,0.75);
+}
+
+/* ////////////////////////////////////////////////////////////////// END - HOME PAGE /////////////////////////////////////////////////////////////////////////// */
 
 
 

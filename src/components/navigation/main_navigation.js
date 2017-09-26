@@ -28,25 +28,25 @@ class MainNavigation extends Component {
       <div>
         <Nav vertical className={ styles.mainNavigationLinks }>
           <NavItem>
-            <Link to="/"><FontAwesome className={ styles.mainNavigationLinkIcons } name="home"/><br />Home</Link>
+            <Link to="/"><FontAwesome className={ styles.mainNavigationLinkIcons } name="home"/><br /></Link>
           </NavItem>
           <NavItem>{/* briefcase */}
-            <Link to="/photos"><FontAwesome className={ styles.mainNavigationLinkIcons } name="code" /><br />Work</Link>
+            <Link to="/photos"><FontAwesome className={ styles.mainNavigationLinkIcons } name="code" /><br /></Link>
           </NavItem>
           <NavItem>
-            <Link to="/photos/3"><FontAwesome className={ styles.mainNavigationLinkIcons } name="users" /><br />Team</Link>
+            <Link to="/photos/3"><FontAwesome className={ styles.mainNavigationLinkIcons } name="users" /><br /></Link>
           </NavItem>
           <NavItem>
-            <Link to="/photos/4"><FontAwesome className={ styles.mainNavigationLinkIcons } name="wrench" /><br />Services</Link>
+            <Link to="/photos/4"><FontAwesome className={ styles.mainNavigationLinkIcons } name="wrench" /><br /></Link>
           </NavItem>
           <NavItem>
-            <Link to="/photos/5"><FontAwesome className={ styles.mainNavigationLinkIcons } name="building" /><br />Workplace</Link>
+            <Link to="/photos/5"><FontAwesome className={ styles.mainNavigationLinkIcons } name="building" /><br /></Link>
           </NavItem>
           <NavItem>
-            <Link to="/blog"><FontAwesome className={ styles.mainNavigationLinkIcons } name="newspaper-o" /><br />Blog</Link>
+            <Link to="/blog"><FontAwesome className={ styles.mainNavigationLinkIcons } name="newspaper-o" /><br /></Link>
           </NavItem>
           <NavItem>
-            <Link to="/photos/5"><FontAwesome className={ styles.mainNavigationLinkIcons } name="map-marker" /><br />Contact</Link>
+            <Link to="/photos/5"><FontAwesome className={ styles.mainNavigationLinkIcons } name="map-marker" /><br /></Link>
           </NavItem>
         </Nav>
       </div>

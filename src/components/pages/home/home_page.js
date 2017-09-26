@@ -18,11 +18,11 @@ class HomePage extends Component {
 		return _.map(this.props.profileimages, profimg => {
 			
 			return (
-				<Col sm="6">
-		        	<NavItem key={profimg.id}>
-		            	<img src={profimg.thumbnailUrl} rounded /><br />
-						<Link to={`/profileimages/${profimg.id}`}>
-							{profimg.title}
+				<Col sm="2">
+					<NavItem className={ styles.homeProfileMenuNav } key={profimg.id}>
+		            	<Link to={`/profileimages/${profimg.id}`}>
+		            		<img className={ styles.homeProfileMenuImages } src={profimg.thumbnailUrl}/><br />
+							<p>{profimg.title}</p>
 						</Link>
 		          	</NavItem>
 		        </Col>
@@ -33,16 +33,14 @@ class HomePage extends Component {
 	render(){
 		
 		return (
-			<div className={ styles.photosAddPhoto }>
-				<div className="text-xs-right">
-					<Link className="btn btn-primary" to="/photos/new">
-						Add a Photo
-					</Link>
-				</div>
-				<h3>Photos</h3>
-				<Nav>
-					{this.renderProfileThumbs()}
-				</Nav>
+			<div className={ styles.homeProfileMenu }>
+				<Row>
+					<Col sm="6">
+						<Row>
+							{this.renderProfileThumbs()}
+						</Row>
+					</Col>
+				</Row>
 			</div>
 		);
 	}
