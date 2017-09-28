@@ -49,22 +49,15 @@ font-family: 'Roboto Condensed', sans-serif;
 @media (min-width : 768px){  
 	.mainNavigation {
    		width: inherit;
-	    min-width: 150px;
-	    max-width: 150px;
+	    min-width: 80px;
+	    max-width: 80px;
 	    height: calc(100vh);
 	    /* margin-top: 40px; */
 	    background-color: #26272A;
 	    position: relative;
   	}
-  	/*.sidebar2 {
-    	min-width: 160px;
-      	max-width: 160px;
-      	min-height: 100%;
-      	position:relative;
-  	}*/
   	.mainContentArea {
-  		width:calc(100% - 150px);
-  		/*background-color:#ffff00;*/
+  		width:calc(100% - 80px);
   	}
 }
 
@@ -100,11 +93,14 @@ html, body{
 
 
 /* ////////////////////////////////////////////////////////////////// TOP MAIN NAV ////////////////////////////////////////////////////////////////////////////// */
+
 .topnavContainer{
 	width:100%;
-	height:40px;
-	/*background-color:#333438;*/
-	background-color:#1a1a1c;
+/*	height:40px;
+*/	background-color:#1a1a1c;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .topnavItem{
@@ -129,23 +125,10 @@ html, body{
 
 
 /* ////////////////////////////////////////////////////////////////// LEFT SIDE MAIN NAV ///////////////////////////////////////////////////////////////////////// */
-/* test */
 
-/*.mainNavigation {
-	background-color:#1a1a1c;
-	
-	height: calc(100vh - 40px);
+.mainNavigationLogo{
+	margin-left:-14px;
 }
-*/
-/* end test */
-
-/* left side main nav */
-/*.mainNavigation {
-	height: calc(100vh - 40px);
-	max-width:200px;
-	min-width:200px;
-	background-color:#1a1a1c;
-}*/
 
 .mainNavigationLinkIcons{
 	font-size:20px;
@@ -233,18 +216,21 @@ html, body{
 
 
 
-/* ////////////////////////////////////////////////////////////////// HOME PAGE ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////// TEAM PAGE ////////////////////////////////////////////////////////////////////////////////// */
 
 /* menu */
 
-.homeProfileMenu{
+.teamProfileMenu{
 	/*position:relative;
 	width:100%;
 	height:100px;*/
-	/*background-color:#3C3D45;*/
+	/*background-color:#1a1a1c;*/
+	padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.homeProfileMenuNav
+.teamProfileMenuNav
 {
 	height:100px;
 	list-style-type:none;
@@ -252,11 +238,11 @@ html, body{
 	position:relative;
 }
 
-.homeProfileMenuNav > p {
+.teamProfileMenuNav > p {
 	
 }
 
-.homeProfileMenuImages {
+.teamProfileMenuImages {
 	border-radius: 50%;
 	width:50px;
 	height:50px;
@@ -264,9 +250,45 @@ html, body{
 	-webkit-box-shadow: 10px 10px 35px -14px rgba(0,0,0,0.75);
 	-moz-box-shadow: 10px 10px 35px -14px rgba(0,0,0,0.75);
 	box-shadow: 10px 10px 35px -14px rgba(0,0,0,0.75);
+	filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 }
 
-/* ////////////////////////////////////////////////////////////////// END - HOME PAGE /////////////////////////////////////////////////////////////////////////// */
+.teamProfileMenuImages:hover {
+    -webkit-filter: grayscale(0);
+  	filter: none;
+}
+
+.teamProfileMainPage {
+	/*background-color:#95E474;*/
+	height: calc(100vh - 110px);
+	padding-right:20px;
+	list-style-type:none;
+	text-align:left;
+	position:relative;
+	overflow:hidden;
+}
+
+.teamProfileMainPageImages {
+	width:100%;
+	border: 2px solid black;
+	filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(.85); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(.85); /* Microsoft Edge and Firefox 35+ */
+	/*max-width:100%;
+	max-height:100%;*/
+	/*width:100px;*/
+	/*height: calc(100vh - 200px);*/
+	/*height:100%;*/
+}
+.teamProfileMainPageImages:hover {
+	-webkit-filter: grayscale(0);
+  	filter: none;
+}
+
+
+/* ////////////////////////////////////////////////////////////////// END - TEAM PAGE /////////////////////////////////////////////////////////////////////////// */
 
 
 

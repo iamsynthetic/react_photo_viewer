@@ -31,9 +31,9 @@ ReactDOM.render(
 		          		<MainNavigation/>
 		          	</Col>
 		          	<Col className={ styles.mainContentArea } sm="10">
-		          		<Row>
+		          		{/*<Row>
 		          			<TopNavbar />
-		          		</Row>
+		          		</Row>*/}
 		          		<Row>
 		          			<Routes/>
 		          		</Row>
