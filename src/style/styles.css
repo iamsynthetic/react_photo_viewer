@@ -49,8 +49,8 @@ font-family: 'Roboto Condensed', sans-serif;
 @media (min-width : 768px){  
 	.mainNavigation {
    		width: inherit;
-	    min-width: 150px;
-	    max-width: 150px;
+	    min-width: 70px;
+	    max-width: 70px;
 	    height: calc(100vh);
 	    /* margin-top: 40px; */
 	    background-color: #26272A;
@@ -63,7 +63,7 @@ font-family: 'Roboto Condensed', sans-serif;
       	position:relative;
   	}*/
   	.mainContentArea {
-  		width:calc(100% - 150px);
+  		width:calc(100% - 70px);
   		/*background-color:#ffff00;*/
   	}
 }
@@ -156,7 +156,7 @@ html, body{
 	text-align:center;
 	color: #1B95AD;
 	height:70px;
-
+	padding:10px 0px;
 }
 
 .mainNavigationLinks > li > a:focus {
