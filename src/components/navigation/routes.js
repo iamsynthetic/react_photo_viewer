@@ -4,9 +4,12 @@ import { connect } from 'react-redux';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
 import HomePage from '../pages/home/home_page';
+import TeamPage from '../pages/team/team_page';
+import TeamMemberPage from '../pages/team/team_member_page';
 import PhotosIndex from '../pages/gallery/photos_index';
 import PhotosNew from '../pages/gallery/photos_new';
 import PhotosShow from '../pages/gallery/photos_show';
+
 
 class Routes extends Component {
 
@@ -16,6 +19,7 @@ class Routes extends Component {
         <Route exact path="/photos" component={PhotosIndex} />
         <Route exact path="/photos/new" component={PhotosNew} />
         <Route path="/photos/:id" component={PhotosShow} />
+        <Route path="/team" component={TeamPage} />
         <Route path="/" component={HomePage} />
       </Switch>
 		)

@@ -25,37 +25,44 @@
   "profileimages": [
     {
       "id": 1,
-      "title": "profile thumb 1",
-      "url": "src/images/profile_images/batman.jpg",
+      "title": "profile image 1",
       "thumbnailUrl": "src/images/profile_thumbs/batman_thumb.jpg",
+      "url": "src/images/profile_images/batman_profile.jpg",
       "author": "batman"
     },
     {
       "id": 2,
-      "title": "profile thumb 2",
-      "url": "src/images/profile_images/daredevil.jpg",
+      "title": "profile image 2",
       "thumbnailUrl": "src/images/profile_thumbs/daredevil_thumb.jpg",
+      "url": "src/images/profile_images/daredevil_profile.jpg",
       "author": "daredevil"
     },
     {
       "id": 3,
-      "title": "profile thumb 3",
-      "url": "src/images/profile_images/gambit.jpg",
+      "title": "profile image 3",
       "thumbnailUrl": "src/images/profile_thumbs/gambit_thumb.jpg",
+      "url": "src/images/profile_images/gambit_profile.jpg",
       "author": "gambit"
     },
     {
       "id": 4,
-      "title": "profile thumb 4",
-      "url": "src/images/profile_images/nightwing.jpg",
+      "title": "profile image 4",
       "thumbnailUrl": "src/images/profile_thumbs/nightwing_thumb.jpg",
+      "url": "src/images/profile_images/nightwing_profile.jpg",
       "author": "nightwing"
     },
     {
       "id": 5,
-      "title": "profile thumb 5",
-      "url": "src/images/profile_images/wolverine.jpg",
+      "title": "profile image 5",
       "thumbnailUrl": "src/images/profile_thumbs/wolverine_thumb.jpg",
+      "url": "src/images/profile_images/wolverine_profile.jpg",
+      "author": "wolverine"
+    },
+    {
+      "id": 6,
+      "title": "profile thumb 6",
+      "thumbnailUrl": "src/images/profile_thumbs/wolverine_thumb.jpg",
+      "url": "src/images/profile_images/wolverine_profile.jpg",
       "author": "wolverine"
     }
   ],

@@ -28,6 +28,9 @@ class MainNavigation extends Component {
       <div>
         <Nav vertical className={ styles.mainNavigationLinks }>
           <NavItem>
+            <Link to="/"><img className={ styles.mainNavigationLogo } src="/src/images/logos/sapient_green.png"/><br /></Link>
+          </NavItem>
+          <NavItem>
             <Link to="/"><FontAwesome className={ styles.mainNavigationLinkIcons } name="home"/><br /></Link>
           </NavItem>
           <NavItem>{/* briefcase */}

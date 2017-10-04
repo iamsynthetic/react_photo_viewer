@@ -21,11 +21,11 @@ class HomePage extends Component {
 		return _.map(this.props.profileimages, profimg => {
 			
 			return (
-				<Col sm="2">
+				<Col sm="1">
 					<NavItem className={ styles.homeProfileMenuNav } key={profimg.id}>
 		            	<Link to={`/profileimages/${profimg.id}`}>
 		            		<img className={ styles.homeProfileMenuImages } src={profimg.thumbnailUrl}/><br />
-							<p>{profimg.title}</p>
+							{/*<p>{profimg.title}</p>*/}
 						</Link>
 		          	</NavItem>
 		        </Col>
