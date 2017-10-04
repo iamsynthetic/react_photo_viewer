@@ -244,6 +244,14 @@ html, body{
 	/*background-color:#3C3D45;*/
 }
 
+.homeProfileMenuBG {
+	background-color:#ffffff;
+}
+
+.homeProfileMenuCARDBODY{
+	padding:10px;
+}
+
 .homeProfileMenuNav
 {
 	height:100px;
