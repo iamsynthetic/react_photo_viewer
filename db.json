@@ -61,9 +61,9 @@
     {
       "id": 6,
       "title": "profile thumb 6",
-      "thumbnailUrl": "src/images/profile_thumbs/wolverine_thumb.jpg",
-      "url": "src/images/profile_images/wolverine_profile.jpg",
-      "author": "wolverine"
+      "thumbnailUrl": "src/images/profile_thumbs/hellboy_thumb.jpg",
+      "url": "src/images/profile_images/hellboy_profile.jpg",
+      "author": "hellboy"
     }
   ],
   "posts": [
