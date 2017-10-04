@@ -16,57 +16,48 @@ class HomePage extends Component {
 		this.props.fetchProfileImages();
 	}
 
-	renderProfileThumbs(){
+	// renderProfileThumbs(){
 		
-		return _.map(this.props.profileimages, profimg => {
+	// 	return _.map(this.props.profileimages, profimg => {
 			
-			return (
-				<Col sm="1">
-					<NavItem className={ styles.homeProfileMenuNav } key={profimg.id}>
-		            	<Link to={`/profileimages/${profimg.id}`}>
-		            		<img className={ styles.homeProfileMenuImages } src={profimg.thumbnailUrl}/><br />
-							{/*<p>{profimg.title}</p>*/}
-						</Link>
-		          	</NavItem>
-		        </Col>
-		    );
-		})
-	}
-
-	// renderProfileCard(){
-
-	// 	return _.map(this.props.profileimages, profimg2 => {
-
 	// 		return (
-	// 			<Card>
-	// 				<CardImg top width="100%" key={profimg2.id} src={ profimg2.id }/>
-	// 				<CardBody>
-	// 					<CardTitle>Card Title</CardTitle>
-	// 					<CardSubtitle>Card subtitle</CardSubtitle>
-	// 					<CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-	// 					<Button>Button</Button>
-	// 				</CardBody>
-	// 			</Card>
-	// 		);
+	// 			<Col sm="1">
+	// 				<NavItem className={ styles.homeProfileMenuNav } key={profimg.id}>
+	// 	            	<Link to={`/profileimages/${profimg.id}`}>
+	// 	            		<img className={ styles.homeProfileMenuImages } src={profimg.thumbnailUrl}/><br />
+	// 						<p>{profimg.title}</p>
+	// 					</Link>
+	// 	          	</NavItem>
+	// 	        </Col>
+	// 	    );
 	// 	})
 	// }
+
+	renderProfileCard(){
+
+		return _.map(this.props.profileimages, profimg2 => {
+
+			return (
+				<Col sm="2">
+				<Card className={ styles.homepageCardBg }>
+			        <CardImg top width="100%" key={profimg2.id} src={ profimg2.url } alt="Card image cap" />
+			        <div className={ styles.homepageCardBodyTxt }>
+			          <CardTitle>Card title</CardTitle>
+			          <CardSubtitle>Card subtitle</CardSubtitle>
+			          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+			          <Button>Button</Button>
+			        </div>
+			    </Card>
+			    </Col>
+			);
+		})
+	}
 
 	render(){
 		
 		return (
-			<div className={ styles.homeProfileMenu }>
-				<Col sm="6">
-						{this.renderProfileThumbs()}
-				</Col>
-				<Card className={ styles.homeProfileMenuBG }>
-					        <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-					        <div className={ styles.homeProfileMenuCARDBODY }>
-					          <CardTitle>Card title</CardTitle>
-					          <CardSubtitle>Card subtitle</CardSubtitle>
-					          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-					          <Button>Button</Button>
-					        </div>
-					      </Card>
+			<div className={ styles.homepageMenu }>
+				{this.renderProfileCard()}
 			</div>
 		);
 	}
