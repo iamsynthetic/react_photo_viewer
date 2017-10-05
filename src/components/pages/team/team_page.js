@@ -6,59 +6,39 @@ import { fetchProfileImages } from '../../../actions';
 import styles from '../../../style/styles.css';
 
 import { Container, Row, Col } from 'reactstrap';
-import { Nav, NavItem, NavLink } from 'reactstrap';
+import { Nav, NavItem, NavLink, Button } from 'reactstrap';
+import { CardBody, Card, CardImg, CardTitle, CardText, CardDeck, CardSubtitle } from 'reactstrap';
 
 class TeamPage extends Component {
 	componentDidMount(){
 		this.props.fetchProfileImages();
 	}
 
-	renderTeamProfileText(){
-		
-		return _.map(this.props.profileimages, profimg => {
-			
-			return (
-				<Col sm="1">
-					{/* text for the section goes here */}
-		        </Col>
-		    );
-		})
-	}
+	renderProfileCard(){
 
-	renderTeamProfileIndex(){
-
-		return _.map(this.props.profileimages, profimg => {
+		return _.map(this.props.profileimages, profimg2 => {
 
 			return (
-				<Col sm="2">
-					<NavItem className={ styles.teamProfileMainPage } key={profimg.id}>
-						<Link to={`/profileimages/${profimg.id}`}>
-							<img className={ styles.teamProfileMainPageImages } src={profimg.url}/>
-						</Link>
-					</NavItem>
-				</Col>
-			)
+				<Col sm="4" lg="2">
+				<Card className={ styles.teampageCardBg }>
+			        <CardImg className={ styles.teampageCardImg } width="100%" key={profimg2.id} src={ profimg2.url } alt="Card image cap" />
+			        <div className={ styles.teampageCardBodyTxt }>
+			          <CardTitle>Card title</CardTitle>
+			          <CardSubtitle>Card subtitle</CardSubtitle>
+			          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+			          <Button>Button</Button>
+			        </div>
+			    </Card>
+			    </Col>
+			);
 		})
 	}
 
 	render(){
 		
 		return (
-			<div className={ styles.teamProfileMenu }>
-				<Row>
-					<Col sm="6">
-						<Row>
-							{this.renderTeamProfileText()}
-						</Row>
-					</Col>
-				</Row>
-				<Row>
-					<Col sm="12">
-						<Row>
-							{this.renderTeamProfileIndex()}
-						</Row>
-					</Col>
-				</Row>
+			<div className={ styles.teampageMenu }>
+				{this.renderProfileCard()}
 			</div>
 		);
 	}

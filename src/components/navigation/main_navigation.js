@@ -37,7 +37,7 @@ class MainNavigation extends Component {
             <Link to="/photos"><FontAwesome className={ styles.mainNavigationLinkIcons } name="code" /><br /></Link>
           </NavItem>
           <NavItem>
-            <Link to="/photos/3"><FontAwesome className={ styles.mainNavigationLinkIcons } name="users" /><br /></Link>
+            <Link to="/team"><FontAwesome className={ styles.mainNavigationLinkIcons } name="users" /><br /></Link>
           </NavItem>
           <NavItem>
             <Link to="/photos/4"><FontAwesome className={ styles.mainNavigationLinkIcons } name="wrench" /><br /></Link>
