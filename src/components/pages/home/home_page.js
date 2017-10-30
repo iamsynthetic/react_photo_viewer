@@ -16,23 +16,6 @@ class HomePage extends Component {
 		this.props.fetchProfileImages();
 	}
 
-	// renderProfileThumbs(){
-		
-	// 	return _.map(this.props.profileimages, profimg => {
-			
-	// 		return (
-	// 			<Col sm="1">
-	// 				<NavItem className={ styles.homeProfileMenuNav } key={profimg.id}>
-	// 	            	<Link to={`/profileimages/${profimg.id}`}>
-	// 	            		<img className={ styles.homeProfileMenuImages } src={profimg.thumbnailUrl}/><br />
-	// 						<p>{profimg.title}</p>
-	// 					</Link>
-	// 	          	</NavItem>
-	// 	        </Col>
-	// 	    );
-	// 	})
-	// }
-
 	renderProfileCard(){
 
 		return _.map(this.props.profileimages, profimg2 => {
