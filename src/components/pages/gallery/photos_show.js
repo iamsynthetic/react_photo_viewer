@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { fetchPhotos } from '../actions';
-import { deletePhoto } from '../actions';
+import { fetchPhotos, deletePhoto } from '../../../actions';
 
 class PhotosShow extends Component {
 
@@ -14,7 +13,8 @@ class PhotosShow extends Component {
 	}
 
 	onDeleteClick(){
-		const{ id } = this.props.match.params;
+		const { id } = this.props.match.params;
+
 		this.props.deletePhoto(id, () => {
 			this.props.history.push('/');
 		});

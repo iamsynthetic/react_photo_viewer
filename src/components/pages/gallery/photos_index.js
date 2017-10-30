@@ -2,7 +2,8 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchPhotos } from '../actions';
+import { fetchPhotos } from '../../../actions';
+import styles from '../../../style/styles.css';
 
 import styles from '../style/style.css';
 
@@ -27,9 +28,9 @@ class PhotosIndex extends Component {
 	}
 
 	render(){
-		
+		console.log(this.props.photos);
 		return (
-			<div>
+			<div className={ styles.photosAddPhoto }>
 				<div className="text-xs-right">
 					<Link className="btn btn-primary" to="/photos/new">
 						Add a Photo

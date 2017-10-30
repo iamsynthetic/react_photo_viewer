@@ -1,0 +1,135 @@
+{
+  "photos": [
+    {
+      "id": 3,
+      "title": "image 3",
+      "url": "http://placehold.it/600/771796",
+      "thumbnailUrl": "http://placehold.it/150/771796",
+      "author": "typicode"
+    },
+    {
+      "id": 4,
+      "title": "image 4",
+      "url": "http://placehold.it/600/771796",
+      "thumbnailUrl": "http://placehold.it/150/771796",
+      "author": "typicode"
+    },
+    {
+      "id": 5,
+      "title": "image 5",
+      "url": "http://placehold.it/600/771796",
+      "thumbnailUrl": "http://placehold.it/150/771796",
+      "author": "typicode"
+    }
+  ],
+  "teampagetitle": [
+    {
+      "id": 1,
+      "pretitle": "SapientRazorfish Toronto",
+      "title": "MEET OUR TEAM",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at felis ex. Suspendisse hendrerit sollicitudin augue, quis malesuada lorem scelerisque id. Phasellus luctus gravida risus, sed porttitor neque. Vestibulum fermentum accumsan ex, id rutrum erat aliquet vel. Aenean non dolor sit amet ex euismod varius. Interdum et malesuada.",
+      "body": ""
+    }
+  ],
+  "teammembertext": [
+    {
+      "id": 1,
+      "pretitle": "",
+      "title": "",
+      "subtitle": "",
+      "body": ""
+    },
+    {
+      "id": 2,
+      "pretitle": "",
+      "title": "",
+      "subtitle": "",
+      "body": ""
+    }
+  ],
+  "profileimages": [
+    {
+      "id": 1,
+      "title": "profile image 1",
+      "thumbnailUrl": "src/images/profile_thumbs/batman_thumb.jpg",
+      "url": "src/images/profile_images/batman_profile.jpg",
+      "author": "batman",
+      "title": "BATMAN",
+      "subtitle": "billionaire",
+      "body": "batman does stuff to keep stuff safe",
+      "button":"user"
+    },
+    {
+      "id": 2,
+      "title": "profile image 2",
+      "thumbnailUrl": "src/images/profile_thumbs/daredevil_thumb.jpg",
+      "url": "src/images/profile_images/daredevil_profile.jpg",
+      "author": "daredevil",
+      "title": "DAREDEVIL",
+      "subtitle": "laywer",
+      "body": "Daredevil does stuff to keep stuff safe",
+      "button":"user"
+    },
+    {
+      "id": 3,
+      "title": "profile image 3",
+      "thumbnailUrl": "src/images/profile_thumbs/gambit_thumb.jpg",
+      "url": "src/images/profile_images/gambit_profile.jpg",
+      "author": "gambit",
+      "title": "GAMBIT",
+      "subtitle": "theif",
+      "body": "Gambit does stuff to keep stuff safe",
+      "button":"user"
+    },
+    {
+      "id": 4,
+      "title": "profile image 4",
+      "thumbnailUrl": "src/images/profile_thumbs/nightwing_thumb.jpg",
+      "url": "src/images/profile_images/nightwing_profile.jpg",
+      "author": "nightwing",
+      "title": "NIGHTWING",
+      "subtitle": "cop",
+      "body": "Nightwing does stuff to keep stuff safe",
+      "button":"user"
+    },
+    {
+      "id": 5,
+      "title": "profile image 5",
+      "thumbnailUrl": "src/images/profile_thumbs/wolverine_thumb.jpg",
+      "url": "src/images/profile_images/wolverine_profile.jpg",
+      "author": "wolverine",
+      "title": "WOLVERINE",
+      "subtitle": "vagabond",
+      "body": "Wolverine does stuff to keep stuff safe",
+      "button":"user"
+    },
+    {
+      "id": 6,
+      "title": "profile thumb 6",
+      "thumbnailUrl": "src/images/profile_thumbs/hellboy_thumb.jpg",
+      "url": "src/images/profile_images/hellboy_profile.jpg",
+      "author": "hellboy",
+      "title": "HELLBOY",
+      "subtitle": "detective",
+      "body": "Hellboy does stuff to keep stuff safe",
+      "button":"user"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
