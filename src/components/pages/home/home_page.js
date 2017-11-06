@@ -2,7 +2,7 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchProfileImages } from '../../../actions';
+import { fetchPhotos } from '../../../actions';
 import styles from '../../../style/styles.css';
 
 import Example from './home_page_card';
@@ -13,29 +13,12 @@ import { CardBody, Card, CardImg, CardTitle, CardText, CardDeck, CardSubtitle } 
 
 class HomePage extends Component {
 	componentDidMount(){
-		this.props.fetchProfileImages();
+		this.props.fetchPhotos();
 	}
-
-	// renderProfileThumbs(){
-		
-	// 	return _.map(this.props.profileimages, profimg => {
-			
-	// 		return (
-	// 			<Col sm="1">
-	// 				<NavItem className={ styles.homeProfileMenuNav } key={profimg.id}>
-	// 	            	<Link to={`/profileimages/${profimg.id}`}>
-	// 	            		<img className={ styles.homeProfileMenuImages } src={profimg.thumbnailUrl}/><br />
-	// 						<p>{profimg.title}</p>
-	// 					</Link>
-	// 	          	</NavItem>
-	// 	        </Col>
-	// 	    );
-	// 	})
-	// }
 
 	renderProfileCard(){
 
-		return _.map(this.props.profileimages, profimg2 => {
+		return _.map(this.props.profileimages_2, profimg2 => {
 
 			return (
 				<Col sm="2">
@@ -55,6 +38,7 @@ class HomePage extends Component {
 
 	render(){
 		
+		console.log('profimg2 is: ' + this.props.profileimages_2)
 		return (
 			<div className={ styles.homepageMenu }>
 				{this.renderProfileCard()}
@@ -64,7 +48,7 @@ class HomePage extends Component {
 }
 
 function mapStateToProps(state){
-	return { profileimages: state.profileimages }
+	return { profileimages_2: state.profileimages_2 }
 }
 
-export default connect(mapStateToProps, {fetchProfileImages})(HomePage);
+export default connect(mapStateToProps, {fetchPhotos})(HomePage);

@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-export const FETCH_PROFILE_IMAGES = 'fetch_profile_images';
+export const FETCH_TEAMPROFILE_TEXT = 'fetch_teamprofile_text';
+export const FETCH_TEAMPROFILE_IMAGES = 'fetch_teamprofile_images';
 export const FETCH_PHOTOS = 'fetch_photos';
 export const CREATE_PHOTO = 'create_photo';
 export const DELETE_PHOTO = 'delete_photo';
@@ -9,11 +10,20 @@ export const DELETE_PHOTO = 'delete_photo';
 //resource - https://github.com/typicode/json-server
 const ROOT_URL = 'http://localhost:3000'
 
-export function fetchProfileImages(){
-	const request = axios.get(`${ROOT_URL}/profileimages`)
+export function fetchTeamProfileText(){
+	const request = axios.get(`${ROOT_URL}/teamprofiletext`)
 
 	return {
-		type: FETCH_PROFILE_IMAGES,
+		type: FETCH_TEAMPROFILE_TEXT,
+		payload: request
+	};
+}
+
+export function fetchTeamProfileImages(){
+	const request = axios.get(`${ROOT_URL}/teamprofileimages`)
+
+	return {
+		type: FETCH_TEAMPROFILE_IMAGES,
 		payload: request
 	};
 }
