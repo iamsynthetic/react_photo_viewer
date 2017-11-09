@@ -2,7 +2,7 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchProfileImages } from '../../../actions';
+import { fetchTeamMember } from '../../../actions';
 import styles from '../../../style/styles.css';
 
 import { Container, Row, Col } from 'reactstrap';
@@ -10,18 +10,21 @@ import { Nav, NavItem, NavLink } from 'reactstrap';
 
 class TeamMemberPage extends Component {
 	componentDidMount(){
-		this.props.fetchProfileImages();
+		if(!this.props.teammember){
+			const { id } = this.props.match.params;
+			this.props.fetchTeamMember(id);
+		}
 	}
 
 	renderProfileThumbs(){
 		
-		return _.map(this.props.profileimages, profimg => {
+		return _.map(this.props.teammember, member => {
 			
 			return (
 				<Col sm="1">
-					<NavItem className={ styles.teamProfileMenuNav } key={profimg.id}>
-		            	<Link to={`/profileimages/${profimg.id}`}>
-		            		<img className={ styles.teamProfileMenuImages } src={profimg.thumbnailUrl}/><br />
+					<NavItem className={ styles.teamProfileMenuNav } key={member.id}>
+		            	<Link to={`/team/${member.id}`}>
+		            		<img className={ styles.teamProfileMenuImages } src={member.image}/><br />
 							{/*<p>{profimg.title}</p>*/}
 						</Link>
 		          	</NavItem>
@@ -36,9 +39,9 @@ class TeamMemberPage extends Component {
 
 			return (
 				<Col sm="2">
-					<NavItem className={ styles.teamProfileMainPage } key={profimg.id}>
-						<Link to={`/profileimages/${profimg.id}`}>
-							<img className={ styles.teamProfileMainPageImages } src={profimg.url}/>
+					<NavItem className={ styles.teamProfileMainPage } key={member.id}>
+						<Link to={`/profileimages/${member.id}`}>
+							<img className={ styles.teamProfileMainPageImages } src={member.url}/>
 						</Link>
 					</NavItem>
 				</Col>
@@ -53,14 +56,14 @@ class TeamMemberPage extends Component {
 				<Row>
 					<Col sm="6">
 						<Row>
-							{this.renderProfileThumbs()}
+							test
 						</Row>
 					</Col>
 				</Row>
 				<Row>
 					<Col sm="12">
 						<Row>
-							{this.renderTeamProfileIndex()}
+							test
 						</Row>
 					</Col>
 				</Row>
@@ -70,7 +73,7 @@ class TeamMemberPage extends Component {
 }
 
 function mapStateToProps(state){
-	return { profileimages: state.profileimages }
+	return { teammember: state.teammember }
 }
 
-export default connect(mapStateToProps, {fetchProfileImages})(TeamMemberPage);
+export default connect(mapStateToProps, {fetchTeamMember})(TeamMemberPage);

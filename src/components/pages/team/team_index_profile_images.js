@@ -29,11 +29,13 @@ class TeamIndexProfileImages extends Component {
 				          	<CardSubtitle className={ styles.teampageCardBodytxtSubtitle }>{ profile.subtitle }</CardSubtitle>
 				          	<CardText className={ styles.teampageCardBodytxtText }>{ profile.body }</CardText>
 				          	
-				          	<NavItem className={ styles.teampageCardBodytxtNavitem }>
-					       		<Link to="/">	
-					       			<FontAwesome className={ styles.teampageCardBodytxtButton } name={ profile.button }/>
-					       		</Link>	
-					        </NavItem>
+				          	<div className={ styles.teampageCardBodybuttonContainer }>
+					          	<NavItem className={ styles.teampageCardBodytxtNavitem }>
+									<Link to={`/team/${profile.vanityurl}`}>
+						       			<div className={ styles.teampageCardBodytxtButton }></div>
+						       		</Link>	
+						        </NavItem>
+					        </div>
 				        </div>
 			        </div>
 			    </Card>

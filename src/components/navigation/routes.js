@@ -19,7 +19,8 @@ class Routes extends Component {
         <Route exact path="/photos" component={PhotosIndex} />
         <Route exact path="/photos/new" component={PhotosNew} />
         <Route path="/photos/:id" component={PhotosShow} />
-        <Route path="/team" component={TeamPage} />
+        <Route exact path="/team" component={TeamPage} />
+        <Route path="/team/:vanityurl" component={TeamMemberPage} />
         <Route path="/" component={HomePage} />
       </Switch>
 		)

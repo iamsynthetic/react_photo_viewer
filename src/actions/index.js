@@ -2,6 +2,7 @@ import axios from 'axios';
 
 export const FETCH_TEAM_INDEX_TITLE = 'fetch_team_index_title';
 export const FETCH_PROFILE_IMAGES = 'fetch_profile_images';
+export const FETCH_TEAM_MEMBER = 'fetch_team_member';
 export const FETCH_PHOTOS = 'fetch_photos';
 export const CREATE_PHOTO = 'create_photo';
 export const DELETE_PHOTO = 'delete_photo';
@@ -9,6 +10,15 @@ export const DELETE_PHOTO = 'delete_photo';
 //const ROOT_URL = 'https://jsonplaceholder.typicode.com'
 //resource - https://github.com/typicode/json-server
 const ROOT_URL = 'http://localhost:3000'
+
+export function fetchTeamMember(){
+	const request = axios.get(`${ROOT_URL}/teammemberpage`)
+
+	return {
+		type: FETCH_TEAM_MEMBER,
+		payload: request
+	};
+}
 
 export function fetchTeamIndexTitle(){
 	const request = axios.get(`${ROOT_URL}/teampagetitle`)
