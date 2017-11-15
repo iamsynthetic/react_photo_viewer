@@ -33,57 +33,50 @@ class TeamMemberPage extends Component {
 
 		return (
 			<Container fluid>
-	 			<Row>
-	 				<div className={ styles.teampageIndexTitle }>
-						<Row>
-							<Col xs="4" sm="3"></Col>
-						    <Col xs="4" sm="6">
-						    	<div className={ styles.teampageIndexPretitle }>
-						    		{ teamprofile.pretitle }<br/>
-						    	</div>
-						    	<div className={ styles.teampageIndexTitle }>
-						    		{ teamprofile.title }<br/>
-						    	</div>
-						    	<div className={ styles.teampageIndexSubtitle }>
-						    		{ teamprofile.subtitle }<br/>
-						    	</div>
-						    </Col>
-						    <Col xs="4" sm="3"></Col>
-						</Row>
-					    <Row>
-					    	<Col xs="4" sm="3"></Col>
-						    <Col xs="4" sm="6">
-						    	<div>
-						    		<hr className={ styles.teampageIndexTitleLineHr }/>
-						    	</div>
-						    </Col>
-						    <Col xs="4" sm="3"></Col>
-					    </Row>
+				<Row>
+					<div className={ styles.teampageMenu }>
+			          	<div className={ styles.teampageIndexTitle }>
+							<Row>
+								<Col xs="4" sm="3"></Col>
+							    <Col xs="4" sm="6">
+							    	<div className={ styles.teampageIndexPretitle }>
+							    		{ teamprofile.pretitle }<br/>
+							    	</div>
+							    	<div className={ styles.teampageIndexTitle }>
+							    		{ teamprofile.title }<br/>
+							    	</div>
+							    	<div className={ styles.teampageIndexSubtitle }>
+							    		{ teamprofile.subtitle }<br/>
+							    	</div>
+							    </Col>
+							    <Col xs="4" sm="3"></Col>
+							</Row>
+						    <Row>
+						    	<Col xs="4" sm="3"></Col>
+							    <Col xs="4" sm="6">
+							    	<div>
+							    		<hr className={ styles.teampageIndexTitleLineHr }/>
+							    	</div>
+							    </Col>
+							    <Col xs="4" sm="3"></Col>
+						    </Row>
+						</div>
 					</div>
-	 			</Row>
-	 			<Row>
-	 				<Col sm="4" lg="2">
-						<Card className={ styles.teampageCardBg }>
-					        <CardImg className={ styles.teampageCardImg } width="100%" src={ teamprofile.profile_img } alt="Card image cap" />
-					        <div className={ styles.teampageCardBody }>
-					        	<div className={ styles.teampageCardBodyTxt }>
-						          	<CardTitle className={ styles.teampageCardBodytxtTitle }>{ teamprofile.title }</CardTitle>
-						          	<CardSubtitle className={ styles.teampageCardBodytxtSubtitle }>{ teamprofile.subtitle }</CardSubtitle>
-						          	<CardText className={ styles.teampageCardBodytxtText }>{ teamprofile.body }</CardText>
-						          	
-						          	<div className={ styles.teampageCardBodybuttonContainer }>
-							          	<NavItem className={ styles.teampageCardBodytxtNavitem }>
-											<Link to={`/team/${teamprofile.id}`}>
-								       			<div className={ styles.teampageCardBodytxtButton }></div>
-								       		</Link>	
-								        </NavItem>
-							        </div>
-						        </div>
-					        </div>
-					    </Card>
-				    </Col>
-	 			</Row>
-	 		</Container>
+			    </Row>
+         		<Row>
+         			<div className={ styles.teampageMenu }>
+						<Col sm="4" lg="2">
+							<Card className={ styles.teampageProfileCardBg }>
+						        <CardImg className={ styles.teampageProfileCardImg } width="100%" key={teamprofile.id} src={ teamprofile.profile_img } alt="Card image cap" />
+						        
+						    </Card>
+						</Col>
+						<Col sm="4" lg="10">
+							<p>{ teamprofile.profile_body }</p>
+						</Col>
+					</div>
+		        </Row>
+         	</Container>
 		)
 	}
 }

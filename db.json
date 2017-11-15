@@ -44,12 +44,12 @@
       "button": "src/images/interface_elements/right_triangle.png",
       "buttonicon": "fa fa-arrow-right",
       "profile_img": "../src/images/profile_images/batman_profile.jpg",
-      "profile-pretitle": "batman...",
-      "profile-title": "BATMAN...",
-      "profile-subtitle": "billionaire...",
-      "profile-body": "batman does stuff to keep stuff safe...",
-      "profile-button": "src/images/interface_elements/right_triangle.png",
-      "profile-buttonicon": "fa fa-arrow-right"
+      "profile_pretitle": "batman...",
+      "profile_title": "BATMAN...",
+      "profile_subtitle": "billionaire...",
+      "profile_body": "batman does stuff to keep stuff safe...",
+      "profile_button": "src/images/interface_elements/right_triangle.png",
+      "profile_buttonicon": "fa fa-arrow-right"
     },
     {
       "id": "daredevil",
@@ -62,12 +62,12 @@
       "button":"src/images/interface_elements/right_triangle.png",
       "buttonicon": "fa-arrow-right",
       "profile_img": "../src/images/profile_images/batman_profile.jpg",
-      "profile-pretitle": " daredevil...",
-      "profile-title": "BATMAN...",
-      "profile-subtitle": "billionaire...",
-      "profile-body": "batman does stuff to keep stuff safe...",
-      "profile-button": "src/images/interface_elements/right_triangle.png",
-      "profile-buttonicon": "fa fa-arrow-right"
+      "profile_pretitle": " daredevil...",
+      "profile_title": "BATMAN...",
+      "profile_subtitle": "billionaire...",
+      "profile_body": "batman does stuff to keep stuff safe...",
+      "profile_button": "src/images/interface_elements/right_triangle.png",
+      "profile_buttonicon": "fa fa-arrow-right"
     },
     {
       "id": "gambit",
@@ -80,12 +80,12 @@
       "button":"src/images/interface_elements/right_triangle.png",
       "buttonicon": "fa-arrow-right",
       "profile_img": "../src/images/profile_images/batman_profile.jpg",
-      "profile-pretitle": " gambit...",
-      "profile-title": "BATMAN...",
-      "profile-subtitle": "billionaire...",
-      "profile-body": "batman does stuff to keep stuff safe...",
-      "profile-button": "src/images/interface_elements/right_triangle.png",
-      "profile-buttonicon": "fa fa-arrow-right"
+      "profile_pretitle": " gambit...",
+      "profile_title": "BATMAN...",
+      "profile_subtitle": "billionaire...",
+      "profile_body": "batman does stuff to keep stuff safe...",
+      "profile_button": "src/images/interface_elements/right_triangle.png",
+      "profile_buttonicon": "fa fa-arrow-right"
     },
     {
       "id": "nightwing",
@@ -98,12 +98,12 @@
       "button":"src/images/interface_elements/right_triangle.png",
       "buttonicon": "fa-arrow-right",
       "profile_img": "../src/images/profile_images/batman_profile.jpg",
-      "profile-pretitle": " nightwing...",
-      "profile-title": "BATMAN...",
-      "profile-subtitle": "billionaire...",
-      "profile-body": "batman does stuff to keep stuff safe...",
-      "profile-button": "src/images/interface_elements/right_triangle.png",
-      "profile-buttonicon": "fa fa-arrow-right"
+      "profile_pretitle": " nightwing...",
+      "profile_title": "BATMAN...",
+      "profile_subtitle": "billionaire...",
+      "profile_body": "batman does stuff to keep stuff safe...",
+      "profile_button": "src/images/interface_elements/right_triangle.png",
+      "profile_buttonicon": "fa fa-arrow-right"
     },
     {
       "id": "wolverine",
@@ -116,12 +116,12 @@
       "button":"src/images/interface_elements/right_triangle.png",
       "buttonicon": "fa-arrow-right",
       "profile_img": "../src/images/profile_images/batman_profile.jpg",
-      "profile-pretitle": " wolverine...",
-      "profile-title": "BATMAN...",
-      "profile-subtitle": "billionaire...",
-      "profile-body": "batman does stuff to keep stuff safe...",
-      "profile-button": "src/images/interface_elements/right_triangle.png",
-      "profile-buttonicon": "fa fa-arrow-right"
+      "profile_pretitle": " wolverine...",
+      "profile_title": "BATMAN...",
+      "profile_subtitle": "billionaire...",
+      "profile_body": "batman does stuff to keep stuff safe...",
+      "profile_button": "src/images/interface_elements/right_triangle.png",
+      "profile_buttonicon": "fa fa-arrow-right"
     },
     {
       "id": "hellboy",
@@ -134,11 +134,11 @@
       "button":"src/images/interface_elements/right_triangle.png",
       "buttonicon": "fa-arrow-right",
       "profile_img": "src/images/profile_images/batman_profile.jpg",
-      "profile-pretitle": " hellboy...",
-      "profile-title": "BATMAN...",
-      "profile-subtitle": "billionaire...",
-      "profile-body": "batman does stuff to keep stuff safe...",
-      "profile-button": "src/images/interface_elements/right_triangle.png",
+      "profile_pretitle": " hellboy...",
+      "profile_title": "BATMAN...",
+      "profile_subtitle": "billionaire...",
+      "profile_body": "batman does stuff to keep stuff safe...",
+      "profile_button": "src/images/interface_elements/right_triangle.png",
       "profile-buttonicon": "fa fa-arrow-right"
     }
   ],
