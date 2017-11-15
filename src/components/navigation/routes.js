@@ -16,13 +16,13 @@ class Routes extends Component {
 	render(){
 		return (
 		  <Switch>
-        <Route exact path="/photos" component={PhotosIndex} />
-        <Route exact path="/photos/new" component={PhotosNew} />
-        <Route path="/photos/:id" component={PhotosShow} />
-        <Route exact path="/team" component={TeamPage} />
-        <Route path="/team/:vanityurl" component={TeamMemberPage} />
-        <Route path="/" component={HomePage} />
-      </Switch>
+	        <Route exact path="/photos" component={PhotosIndex} />
+	        <Route exact path="/photos/new" component={PhotosNew} />
+	        <Route path="/photos/:id" component={PhotosShow} />
+	        <Route exact path="/team" component={TeamPage} />
+	        <Route path="/team/:id" component={TeamMemberPage} />
+	        <Route path="/" component={HomePage} />
+	      </Switch>
 		)
 	}
 }

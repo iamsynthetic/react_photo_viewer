@@ -31,72 +31,28 @@
       "body": ""
     }
   ],
-  "teammemberpage": [
+  "teampageprofile": [
     {
-      "id": 1,
-      "image": "src/images/profile_images/batman_profile.jpg",
-      "pretitle": "batman",
-      "title": "batman",
-      "subtitle": "batman",
-      "body": "batman"
-    },
-    {
-      "id": 2,
-      "image": "src/images/profile_images/batman_profile.jpg",
-      "pretitle": "daredevil",
-      "title": "daredevil",
-      "subtitle": "daredevil",
-      "body": "daredevil"
-    },
-    {
-      "id": 3,
-      "image": "src/images/profile_images/gambit_thumb.jpg",
-      "pretitle": "gambit",
-      "title": "gambit",
-      "subtitle": "gambit",
-      "body": "gambit"
-    },
-    {
-      "id": 4,
-      "image": "src/images/profile_images/nightwing_profile.jpg",
-      "pretitle": "nightwing",
-      "title": "nightwing",
-      "subtitle": "nightwing",
-      "body": "nightwing"
-    },
-    {
-      "id": 5,
-      "image": "src/images/profile_images/wolverine_profile.jpg",
-      "pretitle": "wolverine",
-      "title": "wolverine",
-      "subtitle": "wolverine",
-      "body": "wolverine"
-    },
-    {
-      "id": 6,
-      "image": "src/images/profile_images/hellboy_profile.jpg",
-      "pretitle": "hellboy",
-      "title": "hellboy",
-      "subtitle": "hellboy",
-      "body": "hellboy"
-    }
-  ],
-  "profileimages": [
-    {
-      "id": 1,
-      "vanityurl": "batman",
+      "id": "batman",
       "title": "profile image 1",
       "thumbnailUrl": "src/images/profile_thumbs/batman_thumb.jpg",
       "url": "src/images/profile_images/batman_profile.jpg",
+      "pretitle": "batman",
       "title": "BATMAN",
       "subtitle": "billionaire",
       "body": "batman does stuff to keep stuff safe",
       "button": "src/images/interface_elements/right_triangle.png",
-      "buttonicon": "fa fa-arrow-right"
+      "buttonicon": "fa fa-arrow-right",
+      "profile_img": "../src/images/profile_images/batman_profile.jpg",
+      "profile-pretitle": "batman...",
+      "profile-title": "BATMAN...",
+      "profile-subtitle": "billionaire...",
+      "profile-body": "batman does stuff to keep stuff safe...",
+      "profile-button": "src/images/interface_elements/right_triangle.png",
+      "profile-buttonicon": "fa fa-arrow-right"
     },
     {
-      "id": 2,
-      "vanityurl": "daredevil",
+      "id": "daredevil",
       "title": "profile image 2",
       "thumbnailUrl": "src/images/profile_thumbs/daredevil_thumb.jpg",
       "url": "src/images/profile_images/daredevil_profile.jpg",
@@ -104,11 +60,17 @@
       "subtitle": "laywer",
       "body": "Daredevil does stuff to keep stuff safe",
       "button":"src/images/interface_elements/right_triangle.png",
-      "buttonicon": "fa-arrow-right"
+      "buttonicon": "fa-arrow-right",
+      "profile_img": "../src/images/profile_images/batman_profile.jpg",
+      "profile-pretitle": " daredevil...",
+      "profile-title": "BATMAN...",
+      "profile-subtitle": "billionaire...",
+      "profile-body": "batman does stuff to keep stuff safe...",
+      "profile-button": "src/images/interface_elements/right_triangle.png",
+      "profile-buttonicon": "fa fa-arrow-right"
     },
     {
-      "id": 3,
-      "vanityurl": "gambit",
+      "id": "gambit",
       "title": "profile image 3",
       "thumbnailUrl": "src/images/profile_thumbs/gambit_thumb.jpg",
       "url": "src/images/profile_images/gambit_profile.jpg",
@@ -116,11 +78,17 @@
       "subtitle": "theif",
       "body": "Gambit does stuff to keep stuff safe",
       "button":"src/images/interface_elements/right_triangle.png",
-      "buttonicon": "fa-arrow-right"
+      "buttonicon": "fa-arrow-right",
+      "profile_img": "../src/images/profile_images/batman_profile.jpg",
+      "profile-pretitle": " gambit...",
+      "profile-title": "BATMAN...",
+      "profile-subtitle": "billionaire...",
+      "profile-body": "batman does stuff to keep stuff safe...",
+      "profile-button": "src/images/interface_elements/right_triangle.png",
+      "profile-buttonicon": "fa fa-arrow-right"
     },
     {
-      "id": 4,
-      "vanityurl": "nightwing",
+      "id": "nightwing",
       "title": "profile image 4",
       "thumbnailUrl": "src/images/profile_thumbs/nightwing_thumb.jpg",
       "url": "src/images/profile_images/nightwing_profile.jpg",
@@ -128,11 +96,17 @@
       "subtitle": "cop",
       "body": "Nightwing does stuff to keep stuff safe",
       "button":"src/images/interface_elements/right_triangle.png",
-      "buttonicon": "fa-arrow-right"
+      "buttonicon": "fa-arrow-right",
+      "profile_img": "../src/images/profile_images/batman_profile.jpg",
+      "profile-pretitle": " nightwing...",
+      "profile-title": "BATMAN...",
+      "profile-subtitle": "billionaire...",
+      "profile-body": "batman does stuff to keep stuff safe...",
+      "profile-button": "src/images/interface_elements/right_triangle.png",
+      "profile-buttonicon": "fa fa-arrow-right"
     },
     {
-      "id": 5,
-      "vanityurl": "wolverine",
+      "id": "wolverine",
       "title": "profile image 5",
       "thumbnailUrl": "src/images/profile_thumbs/wolverine_thumb.jpg",
       "url": "src/images/profile_images/wolverine_profile.jpg",
@@ -140,11 +114,17 @@
       "subtitle": "vagabond",
       "body": "Wolverine does stuff to keep stuff safe",
       "button":"src/images/interface_elements/right_triangle.png",
-      "buttonicon": "fa-arrow-right"
+      "buttonicon": "fa-arrow-right",
+      "profile_img": "../src/images/profile_images/batman_profile.jpg",
+      "profile-pretitle": " wolverine...",
+      "profile-title": "BATMAN...",
+      "profile-subtitle": "billionaire...",
+      "profile-body": "batman does stuff to keep stuff safe...",
+      "profile-button": "src/images/interface_elements/right_triangle.png",
+      "profile-buttonicon": "fa fa-arrow-right"
     },
     {
-      "id": 6,
-      "vanityurl": "hellboy",
+      "id": "hellboy",
       "title": "profile thumb 6",
       "thumbnailUrl": "src/images/profile_thumbs/hellboy_thumb.jpg",
       "url": "src/images/profile_images/hellboy_profile.jpg",
@@ -152,7 +132,14 @@
       "subtitle": "detective",
       "body": "Hellboy does stuff to keep stuff safe",
       "button":"src/images/interface_elements/right_triangle.png",
-      "buttonicon": "fa-arrow-right"
+      "buttonicon": "fa-arrow-right",
+      "profile_img": "src/images/profile_images/batman_profile.jpg",
+      "profile-pretitle": " hellboy...",
+      "profile-title": "BATMAN...",
+      "profile-subtitle": "billionaire...",
+      "profile-body": "batman does stuff to keep stuff safe...",
+      "profile-button": "src/images/interface_elements/right_triangle.png",
+      "profile-buttonicon": "fa fa-arrow-right"
     }
   ],
   "posts": [

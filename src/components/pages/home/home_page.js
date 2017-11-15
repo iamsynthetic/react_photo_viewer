@@ -2,7 +2,7 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchProfileImages } from '../../../actions';
+import { fetchTeamPageProfile } from '../../../actions';
 import styles from '../../../style/styles.css';
 
 import Example from './home_page_card';
@@ -13,12 +13,12 @@ import { CardBody, Card, CardImg, CardTitle, CardText, CardDeck, CardSubtitle } 
 
 class HomePage extends Component {
 	componentDidMount(){
-		this.props.fetchProfileImages();
+		this.props.fetchTeamPageProfile();
 	}
 
 	renderProfileCard(){
 
-		return _.map(this.props.profileimages, profimg2 => {
+		return _.map(this.props.teamprofile, profimg2 => {
 
 			return (
 				<Col sm="2">
@@ -47,7 +47,7 @@ class HomePage extends Component {
 }
 
 function mapStateToProps(state){
-	return { profileimages: state.profileimages }
+	return { teamprofile: state.teamprofile }
 }
 
-export default connect(mapStateToProps, {fetchProfileImages})(HomePage);
+export default connect(mapStateToProps, {fetchTeamPageProfile})(HomePage);

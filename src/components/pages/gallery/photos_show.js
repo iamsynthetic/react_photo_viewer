@@ -6,7 +6,7 @@ import { fetchPhotos, deletePhoto } from '../../../actions';
 class PhotosShow extends Component {
 
 	componentDidMount(){
-		if(!this.props.photos){
+		if(!this.props.blogphotos){
 			const { id } = this.props.match.params;
 			this.props.fetchPhotos(id);
 		}
@@ -22,10 +22,10 @@ class PhotosShow extends Component {
 	
 	render(){
 
-		const { photos } = this.props;
-
-		if(!photos){
-			return <div>Loading...</div>;
+		const { blogphotos } = this.props;
+		console.log('this.props is: ' + blogphotos);
+		if(!blogphotos){
+			return <div>Loading...!!!</div>;
 		}
 
 		return (
@@ -34,16 +34,16 @@ class PhotosShow extends Component {
 				<button className="btn btn-danger pull-xs-right" onClick={this.onDeleteClick.bind(this)}>
 					Delete Photo
 				</button>
-				<h3>{photos.title}</h3>
-				<h6>categories: {photos.categories}</h6>
-				<img src={photos.url} />
+				<h3>{blogphotos.title}</h3>
+				<h6>categories: {blogphotos.categories}</h6>
+				<img src={blogphotos.url} />
 			</div>
 		)
 	}
 }
 
-function mapStateToProps({ photos }, ownProps){
-	return { photos: photos[ownProps.match.params.id]};
+function mapStateToProps({ blogphotos }, ownProps){
+	return { blogphotos: blogphotos[ownProps.match.params.id]};
 }
 
 export default connect(mapStateToProps, { fetchPhotos, deletePhoto })(PhotosShow);

@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 export const FETCH_TEAM_INDEX_TITLE = 'fetch_team_index_title';
-export const FETCH_PROFILE_IMAGES = 'fetch_profile_images';
-export const FETCH_TEAM_MEMBER = 'fetch_team_member';
+export const FETCH_TEAM_PAGE_PROFILE = 'fetch_team_page_profile';
 export const FETCH_PHOTOS = 'fetch_photos';
 export const CREATE_PHOTO = 'create_photo';
 export const DELETE_PHOTO = 'delete_photo';
@@ -10,15 +9,6 @@ export const DELETE_PHOTO = 'delete_photo';
 //const ROOT_URL = 'https://jsonplaceholder.typicode.com'
 //resource - https://github.com/typicode/json-server
 const ROOT_URL = 'http://localhost:3000'
-
-export function fetchTeamMember(){
-	const request = axios.get(`${ROOT_URL}/teammemberpage`)
-
-	return {
-		type: FETCH_TEAM_MEMBER,
-		payload: request
-	};
-}
 
 export function fetchTeamIndexTitle(){
 	const request = axios.get(`${ROOT_URL}/teampagetitle`)
@@ -29,11 +19,11 @@ export function fetchTeamIndexTitle(){
 	};
 }
 
-export function fetchProfileImages(){
-	const request = axios.get(`${ROOT_URL}/profileimages`)
+export function fetchTeamPageProfile(){
+	const request = axios.get(`${ROOT_URL}/teampageprofile`)
 
 	return {
-		type: FETCH_PROFILE_IMAGES,
+		type: FETCH_TEAM_PAGE_PROFILE,
 		payload: request
 	};
 }
@@ -68,19 +58,3 @@ export function deletePhoto(id, callback){
 		payload: id
 	}
 }
-
-// export function deletePhoto(id){
-	
-//     return (dispatch, getState) => {
-// 	    //perform API call
-// 	    axios.get(`${ROOT_URL}/photos/`)
-// 	      .then(response => {
-// 	        // now that you have the response, you can dispatch the action
-// 	        dispatch({
-// 	          type: DELETE_PHOTO,
-// 	          payload: response,
-// 	          payload2: id
-// 	        });
-// 	      });
-//   	}
-// }

@@ -11,7 +11,7 @@ class PhotosIndex extends Component {
 	}
 
 	renderPhotos(){
-		return _.map(this.props.photos, photo => {
+		return _.map(this.props.blogphotos, photo => {
 			return (
 				<li className="list-group-item" key={photo.id}>
 					<div>
@@ -26,7 +26,7 @@ class PhotosIndex extends Component {
 	}
 
 	render(){
-		console.log(this.props.photos);
+		console.log(this.props.blogphotos);
 		return (
 			<div className={ styles.photosAddPhoto }>
 				<div className="text-xs-right">
@@ -44,7 +44,7 @@ class PhotosIndex extends Component {
 }
 
 function mapStateToProps(state){
-	return { photos: state.photos }
+	return { blogphotos: state.blogphotos }
 }
 
 export default connect(mapStateToProps, {fetchPhotos})(PhotosIndex);
