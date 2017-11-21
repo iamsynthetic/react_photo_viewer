@@ -13,6 +13,7 @@ import MainNavigation from './components/navigation/main_navigation';
 import Routes from './components/navigation/routes';
 import { Container, Row, Col } from 'reactstrap';
 import { Nav, NavItem, NavLink, Navbar, Button } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.css';
 import styles from './style/styles.css';
 
 const createStoreWithMiddleware = applyMiddleware(promise, multi, thunk)(createStore);
@@ -22,15 +23,15 @@ ReactDOM.render(
 		<BrowserRouter>
 			
 			<Container fluid>
-         		{/*<Row>
+         		<Row>
          			<TopNavbar />
          		</Row>
-         		*/}
+         		
          		<Row>
-		          	<Col className={ styles.mainNavigation } sm="2">
+		          	{/*<Col className={ styles.mainNavigation } sm="2">
 		          		<MainNavigation/>
-		          	</Col>
-		          	<Col className={ styles.mainContentArea } sm="10">
+		          	</Col>*/}
+		          	<Col className={ styles.mainContentArea } sm="12">
 		          		{/*<Row>
 		          			<TopNavbar />
 		          		</Row>*/}
