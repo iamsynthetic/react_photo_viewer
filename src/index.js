@@ -27,17 +27,7 @@ ReactDOM.render(
          			<TopNavbar />
          		</Row>
          		<Row>
-		          	{/*<Col className={ styles.mainNavigation } sm="2">
-		          		<MainNavigation/>
-		          	</Col>*/}
-		          	<Col className={ styles.mainContentArea } sm="12">
-		          		{/*<Row>
-		          			<TopNavbar />
-		          		</Row>*/}
-		          		<Row>
-		          			<Routes/>
-		          		</Row>
-		          	</Col>
+		          	<Routes/>
 		        </Row>
          	</Container>
           

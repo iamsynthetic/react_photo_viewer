@@ -41,7 +41,7 @@ class HomePage extends Component {
 		return (
 			<div className={ styles.homepageMenu }>
 				<p>HOME</p>
-				{this.renderProfileCard()}
+				
 			</div>
 		);
 	}
