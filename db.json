@@ -1,6 +1,20 @@
 {
   "photos": [
     {
+      "id": 1,
+      "title": "photo 1",
+      "url": "http://placehold.it/600/771796",
+      "thumbnailUrl": "http://placehold.it/150/771796",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "photo 2",
+      "url": "http://placehold.it/600/771796",
+      "thumbnailUrl": "http://placehold.it/150/771796",
+      "author": "typicode"
+    },
+    {
       "id": 3,
       "title": "image 3",
       "url": "http://placehold.it/600/771796",
@@ -8,18 +22,55 @@
       "author": "typicode"
     },
     {
-      "id": 4,
-      "title": "image 4",
+      "title": "test",
+      "url": "google.com",
+      "thumbnailUrl": "test",
+      "author": "author",
+      "id": 4
+    },
+    {
+      "title": "title",
+      "url": "url",
+      "thumbnailUrl": "thumb",
+      "author": "author",
+      "id": 5
+    }
+  ],
+  "blog": [
+    {
+      "id": 1,
+      "title": "blog post 1",
       "url": "http://placehold.it/600/771796",
       "thumbnailUrl": "http://placehold.it/150/771796",
       "author": "typicode"
     },
     {
-      "id": 5,
-      "title": "image 5",
+      "id": 2,
+      "title": "blog post 2",
       "url": "http://placehold.it/600/771796",
       "thumbnailUrl": "http://placehold.it/150/771796",
       "author": "typicode"
+    },
+    {
+      "id": 3,
+      "title": "blog post 3",
+      "url": "http://placehold.it/600/771796",
+      "thumbnailUrl": "http://placehold.it/150/771796",
+      "author": "typicode"
+    },
+    {
+      "title": "title",
+      "url": "url",
+      "thumbnailUrl": "thumb",
+      "author": "author",
+      "id": 4
+    },
+    {
+      "title": "title",
+      "url": "url",
+      "thumbnailUrl": "thumb",
+      "author": "author",
+      "id": 5
     }
   ],
   "teampagetitle": [
@@ -34,11 +85,10 @@
   "teampageprofile": [
     {
       "id": "batman",
-      "title": "profile image 1",
+      "title": "BATMAN",
       "thumbnailUrl": "src/images/profile_thumbs/batman_thumb.jpg",
       "url": "src/images/profile_images/batman_profile.jpg",
       "pretitle": "batman",
-      "title": "BATMAN",
       "subtitle": "billionaire",
       "body": "batman does stuff to keep stuff safe",
       "button": "src/images/interface_elements/right_triangle.png",
@@ -53,13 +103,12 @@
     },
     {
       "id": "daredevil",
-      "title": "profile image 2",
+      "title": "DAREDEVIL",
       "thumbnailUrl": "src/images/profile_thumbs/daredevil_thumb.jpg",
       "url": "src/images/profile_images/daredevil_profile.jpg",
-      "title": "DAREDEVIL",
       "subtitle": "laywer",
       "body": "Daredevil does stuff to keep stuff safe",
-      "button":"src/images/interface_elements/right_triangle.png",
+      "button": "src/images/interface_elements/right_triangle.png",
       "buttonicon": "fa-arrow-right",
       "profile_img": "../src/images/profile_images/daredevil_profile.jpg",
       "profile_pretitle": " daredevil...",
@@ -71,13 +120,12 @@
     },
     {
       "id": "gambit",
-      "title": "profile image 3",
+      "title": "GAMBIT",
       "thumbnailUrl": "src/images/profile_thumbs/gambit_thumb.jpg",
       "url": "src/images/profile_images/gambit_profile.jpg",
-      "title": "GAMBIT",
       "subtitle": "theif",
       "body": "Gambit does stuff to keep stuff safe",
-      "button":"src/images/interface_elements/right_triangle.png",
+      "button": "src/images/interface_elements/right_triangle.png",
       "buttonicon": "fa-arrow-right",
       "profile_img": "../src/images/profile_images/gambit_profile.jpg",
       "profile_pretitle": " gambit...",
@@ -89,13 +137,12 @@
     },
     {
       "id": "nightwing",
-      "title": "profile image 4",
+      "title": "NIGHTWING",
       "thumbnailUrl": "src/images/profile_thumbs/nightwing_thumb.jpg",
       "url": "src/images/profile_images/nightwing_profile.jpg",
-      "title": "NIGHTWING",
       "subtitle": "cop",
       "body": "Nightwing does stuff to keep stuff safe",
-      "button":"src/images/interface_elements/right_triangle.png",
+      "button": "src/images/interface_elements/right_triangle.png",
       "buttonicon": "fa-arrow-right",
       "profile_img": "../src/images/profile_images/nightwing_profile.jpg",
       "profile_pretitle": " nightwing...",
@@ -107,13 +154,12 @@
     },
     {
       "id": "wolverine",
-      "title": "profile image 5",
+      "title": "WOLVERINE",
       "thumbnailUrl": "src/images/profile_thumbs/wolverine_thumb.jpg",
       "url": "src/images/profile_images/wolverine_profile.jpg",
-      "title": "WOLVERINE",
       "subtitle": "vagabond",
       "body": "Wolverine does stuff to keep stuff safe",
-      "button":"src/images/interface_elements/right_triangle.png",
+      "button": "src/images/interface_elements/right_triangle.png",
       "buttonicon": "fa-arrow-right",
       "profile_img": "../src/images/profile_images/wolverine_profile.jpg",
       "profile_pretitle": " wolverine...",
@@ -125,13 +171,12 @@
     },
     {
       "id": "hellboy",
-      "title": "profile thumb 6",
+      "title": "HELLBOY",
       "thumbnailUrl": "src/images/profile_thumbs/hellboy_thumb.jpg",
       "url": "src/images/profile_images/hellboy_profile.jpg",
-      "title": "HELLBOY",
       "subtitle": "detective",
       "body": "Hellboy does stuff to keep stuff safe",
-      "button":"src/images/interface_elements/right_triangle.png",
+      "button": "src/images/interface_elements/right_triangle.png",
       "buttonicon": "fa-arrow-right",
       "profile_img": "../src/images/profile_images/hellboy_profile.jpg",
       "profile_pretitle": " hellboy...",

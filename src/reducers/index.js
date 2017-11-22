@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
-import BlogPhotosReducer from './reducer_blog_photos';
+import BlogReducer from './reducer_blog';
 import TeamProfileReducer from './reducer_team_profile';
 import TeamIndexTitleReducer from './reducer_team_index_title';
 
 const rootReducer = combineReducers({
-	blogphotos: BlogPhotosReducer,
+	blog: BlogReducer,
 	teamprofile: TeamProfileReducer,
 	TeamIndexTitleReducer: TeamIndexTitleReducer,
 	form: formReducer

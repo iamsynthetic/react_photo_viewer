@@ -6,9 +6,11 @@ import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import HomePage from '../pages/home/home_page';
 import TeamPage from '../pages/team/team_page';
 import TeamMemberPage from '../pages/team/team_member_page';
-import PhotosIndex from '../pages/gallery/photos_index';
-import PhotosNew from '../pages/gallery/photos_new';
-import PhotosShow from '../pages/gallery/photos_show';
+import CapabilityPage from '../pages/capability/capability_page';
+import BlogIndex from '../pages/blog/blog_index';
+import BlogNew from '../pages/blog/blog_new';
+import BlogShow from '../pages/blog/blog_show';
+import ContactPage from '../pages/contact/contact_page';
 
 
 class Routes extends Component {
@@ -16,12 +18,14 @@ class Routes extends Component {
 	render(){
 		return (
 		  <Switch>
-	        <Route exact path="/photos" component={PhotosIndex} />
-	        <Route exact path="/photos/new" component={PhotosNew} />
-	        <Route path="/photos/:id" component={PhotosShow} />
+		  	<Route exact path="/" component={HomePage} />
 	        <Route exact path="/team" component={TeamPage} />
 	        <Route path="/team/:id" component={TeamMemberPage} />
-	        <Route path="/" component={HomePage} />
+	        <Route path="/capability" component={CapabilityPage} />
+	        <Route exact path="/blog" component={BlogIndex} />
+	        <Route exact path="/blog/new" component={BlogNew} />
+	        <Route path="/blog/:id" component={BlogShow} />
+	        <Route exact path="/contact" component={ContactPage} />
 	      </Switch>
 		)
 	}

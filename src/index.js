@@ -26,7 +26,6 @@ ReactDOM.render(
          		<Row>
          			<TopNavbar />
          		</Row>
-         		
          		<Row>
 		          	{/*<Col className={ styles.mainNavigation } sm="2">
 		          		<MainNavigation/>

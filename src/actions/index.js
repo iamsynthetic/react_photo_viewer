@@ -2,6 +2,9 @@ import axios from 'axios';
 
 export const FETCH_TEAM_INDEX_TITLE = 'fetch_team_index_title';
 export const FETCH_TEAM_PAGE_PROFILE = 'fetch_team_page_profile';
+export const FETCH_BLOGPOSTS = 'fetch_blogposts';
+export const CREATE_BLOGPOST = 'creat_blogpost';
+export const DELETE_BLOGPOST = 'delete_blogpost';
 export const FETCH_PHOTOS = 'fetch_photos';
 export const CREATE_PHOTO = 'create_photo';
 export const DELETE_PHOTO = 'delete_photo';
@@ -28,6 +31,36 @@ export function fetchTeamPageProfile(){
 	};
 }
 
+export function fetchBlogPosts(){
+	const request = axios.get(`${ROOT_URL}/blog`);
+
+	return {
+		type: FETCH_BLOGPOSTS,
+		payload: request
+	};
+}
+
+export function createBlogPost(values, callback){
+	const request = axios.post(`${ROOT_URL}/blog`, values)
+	.then(() => callback());
+
+	return {
+		type: CREATE_BLOGPOST,
+		payload:request,
+		payload2:values
+	}
+}
+
+export function deleteBlogPost(id, callback){
+	const request = axios.delete(`${ROOT_URL}/blog/${id}`)
+	.then(() => callback());
+
+
+	return{
+		type: DELETE_BLOGPOST,
+		payload: id
+	}
+}
 export function fetchPhotos(){
 	const request = axios.get(`${ROOT_URL}/photos`);
 

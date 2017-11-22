@@ -5,13 +5,11 @@ import { Link } from 'react-router-dom';
 import { fetchTeamPageProfile } from '../../../actions';
 import styles from '../../../style/styles.css';
 
-import Example from './home_page_card';
-
 import { Container, Row, Col } from 'reactstrap';
 import { Nav, NavItem, NavLink, Button } from 'reactstrap';
 import { CardBody, Card, CardImg, CardTitle, CardText, CardDeck, CardSubtitle } from 'reactstrap';
 
-class HomePage extends Component {
+class CapabilityPage extends Component {
 	componentDidMount(){
 		this.props.fetchTeamPageProfile();
 	}
@@ -40,7 +38,11 @@ class HomePage extends Component {
 		
 		return (
 			<div className={ styles.homepageMenu }>
-				<p>HOME</p>
+				<Row>
+					<Col sm="12">
+						<p>CAPABILITY PAGE</p>
+					</Col>
+				</Row>
 				{this.renderProfileCard()}
 			</div>
 		);
@@ -51,4 +53,4 @@ function mapStateToProps(state){
 	return { teamprofile: state.teamprofile }
 }
 
-export default connect(mapStateToProps, {fetchTeamPageProfile})(HomePage);
+export default connect(mapStateToProps, {fetchTeamPageProfile})(CapabilityPage);

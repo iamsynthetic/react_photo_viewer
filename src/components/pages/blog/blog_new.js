@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { createPhoto } from '../../../actions';
+import { createBlogPost } from '../../../actions';
 
-class PhotosNew extends Component{
+class BlogNew extends Component{
 
 	renderField(field){
 		const { meta: { touched, error } } = field;
@@ -20,8 +20,8 @@ class PhotosNew extends Component{
 	}
 
 	onSubmit(values){
-		this.props.createPhoto(values, () => {
-			this.props.history.push('/');
+		this.props.createBlogPost(values, () => {
+			this.props.history.push('/blog');
 		});
 	}
 
@@ -66,5 +66,5 @@ export default reduxForm({
 	validate,
 	form: 'PhotosNewForm'
 })(
-	connect(null,{ createPhoto })(PhotosNew)
+	connect(null,{ createBlogPost })(BlogNew)
 );
