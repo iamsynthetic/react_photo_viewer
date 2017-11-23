@@ -39,7 +39,7 @@ class HomePage extends Component {
 	render(){
 		
 		return (
-			<div className={ styles.homepageMenu }>
+			<div className={ styles.homePage }>
 				<p>HOME</p>
 				
 			</div>
