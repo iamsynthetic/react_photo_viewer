@@ -27,7 +27,8 @@ class TopNavbar extends Component {
       collapsed: !this.state.collapsed
     });
   }
-	
+
+
 	// <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
 	// 			          <MenuItem eventKey={3.1}>Action</MenuItem>
 	// 			          <MenuItem eventKey={3.2}>Another action</MenuItem>
@@ -49,6 +50,7 @@ class TopNavbar extends Component {
 				    <Navbar.Collapse>
 				      <Nav className={ styles.topnavmenu } pullRight>
 				      	<NavItem>
+				      		{/*<button type="button" ref="button1" className="normalBtn" id="btn1" onClick={this.handleClick} style={{backgroundColor:this.state.bgColor}}>This works</button>*/}
 				      		<Link to="/" className={ styles.topnavlinks }>Home</Link>
 				      	</NavItem>
 				        <NavItem>

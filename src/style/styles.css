@@ -327,7 +327,8 @@ font-family: 'Playfair Display', 900i;*/
 .homePage{
 	width:100%;
 	height: calc(100vh - 62px);
-	background: url('http://placehold.it/1920x1080') no-repeat center center fixed;
+	/*background: url('http://placehold.it/1920x1080') no-repeat center center fixed;*/
+	background: url('/src/images/backgrounds/mountain_1.jpg') no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	background-size: cover;
