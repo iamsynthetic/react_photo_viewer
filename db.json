@@ -1,4 +1,14 @@
 {
+  "homepage": [
+    {
+      "id": 1,
+      "pretitle": "SapientRazorfish Toronto",
+      "title": "Web design and development\nwith style. We get it done.",
+      "subtitle": "with speed, precision, and dedication.",
+      "body": "We think on our feet,\nand deliver on tight deadlines every day.\nOur snack day is pretty great too.",
+      "button": "Learn More"
+    }
+  ],
   "photos": [
     {
       "id": 1,

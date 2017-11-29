@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+export const FETCH_HOME_PAGE = 'fetch_home_page';
 export const FETCH_TEAM_INDEX_TITLE = 'fetch_team_index_title';
 export const FETCH_TEAM_PAGE_PROFILE = 'fetch_team_page_profile';
 export const FETCH_BLOGPOSTS = 'fetch_blogposts';
@@ -12,6 +13,15 @@ export const DELETE_PHOTO = 'delete_photo';
 //const ROOT_URL = 'https://jsonplaceholder.typicode.com'
 //resource - https://github.com/typicode/json-server
 const ROOT_URL = 'http://localhost:3000'
+
+export function fetchHomePage(){
+	const request = axios.get(`${ROOT_URL}/homepage`)
+
+	return {
+		type: FETCH_HOME_PAGE,
+		payload: request
+	};
+}
 
 export function fetchTeamIndexTitle(){
 	const request = axios.get(`${ROOT_URL}/teampagetitle`)

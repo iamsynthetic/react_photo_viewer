@@ -13,6 +13,7 @@
 	#3C3D45 - shade of shark blue - lightest shade - interface elements
 	#1B95AD - eastern blue        - default link color
 	#10cff4 - bright turquoise    - hover / active link color
+
 */
 
 /* ////////////////////////////////////////////////////////////////// BREAK POINTS //////////////////////////////////////////////////////////////////////// */
@@ -49,37 +50,6 @@ font-family: 'Vollkorn', 400i;
 font-family: 'Vollkorn', 700;
 font-family: 'Vollkorn', 700i;
 */
-
-/* ////////////////////////////////////////////////////////////////// MEDIA QUERIES //////////////////////////////////////////////////////////////////////// */
-
-/* bigger than tablet */
-@media (min-width : 768px){  
-	.mainNavigation {
-   		width: inherit;
-	    min-width: 70px;
-	    max-width: 70px;
-	    min-width: 80px;
-	    max-width: 80px;
-	    height: calc(100vh);
-	    /* margin-top: 40px; */
-	    background-color: #26272A;
-	    position: relative;
-  	}
-  	.mainContentArea {
-  		width:calc(100% - 70px);
-  		/*background-color:#ffff00;*/
-  		width:calc(100% - 80px);
-  	}
-}
-
-/* mobile */
-@media (max-width: 768px){
-	.mainNavigation {
-    	width: inherit;
-    	background-color:#1a1a1c;
-    	position:relative;
-  	}
-}
 
 /* ////////////////////////////////////////////////////////////////// END MEDIA QUERIES //////////////////////////////////////////////////////////////////// */
 
@@ -176,22 +146,6 @@ html, body{
 	list-style:none;
 }
 
-
-/*font-family: 'Raleway', sans-serif;
-font-family: 'Raleway', 400;
-font-family: 'Raleway', 400i;
-font-family: 'Raleway', 700;
-font-family: 'Raleway', 700i;
-font-family: 'Raleway', 900;
-font-family: 'Raleway', 900i;
-font-family: 'Playfair Display', serif;
-font-family: 'Playfair Display', 400;
-font-family: 'Playfair Display', 400i;
-font-family: 'Playfair Display', 700;
-font-family: 'Playfair Display', 700i;
-font-family: 'Playfair Display', 900;
-font-family: 'Playfair Display', 900i;*/
-
 .mainNavigationLinkIcons{
 	font-size:20px;
 }
@@ -263,11 +217,6 @@ font-family: 'Playfair Display', 900i;*/
 	background-color:transparent;
 }
 
-/*.moduleColor {
-	max-width:200px;
-	min-width:200px;
-}*/
-
 /* ////////////////////////////////////////////////////////////////// END - LEFT SIDE MAIN NAV ///////////////////////////////////////////////////////////////////// */
 
 
@@ -300,7 +249,6 @@ font-family: 'Playfair Display', 900i;*/
 .mainContentArea_navContainer{
 	width:100%;
 	height:40px;
-	/*background-color:#333438;*/
 	background-color:#1a1a1c;
 }
 
@@ -324,10 +272,9 @@ font-family: 'Playfair Display', 900i;*/
 /* ////////////////////////////////////////////////////////////////// HOME PAGE /////////////////////////////////////////////////////////////////////////////////// */
 
 
-.homePage{
+.homepage{
 	width:100%;
 	height: calc(100vh - 62px);
-	/*background: url('http://placehold.it/1920x1080') no-repeat center center fixed;*/
 	background: url('/src/images/backgrounds/mountain_1.jpg') no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -335,14 +282,129 @@ font-family: 'Playfair Display', 900i;*/
   	-o-background-size: cover;
 }
 
+.fillcol1{
+	background-color:blue;
+}
+.fillcol2{
+	background-color:orange;
+}
+.fillrow1{
+	background-color:#cccccc;
+}
+.fillrow2{
+	background-color:#d3d3d3;
+}
+.homepageText{
+	position: absolute;
+	top: 40%; 
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+}
+.homepagePretitle{
+	font-family: 'Vollkorn';
+	font-size:16px;
+	font-weight:400;
+	font-style:italic;
+	color:#ffffff;
+}
+.homepageTitle{
+	font-family: 'Vollkorn';
+	font-size:50px;
+	font-weight:400;
+	color:#ffffff;
+	white-space: pre;
+	/*padding-top:16px;
+	padding-bottom:16px;*/
+}
+.homepageSubtitle{
+	font-family: 'Vollkorn';
+	font-size:16px;
+	font-weight:400;
+	color:#ffffff;
+}
+.homepageTitleLineHr{
+	margin-left: -15px;
+    width:100px;
+	height:2px;
+	border:none;
+	/*text-align:center; */
+	margin-top:40px;
+	color:#E03A80;
+	background-color:#E03A80;
+}
+.homepageBody{
+	font-family:'Raleway', sans-serif;
+	font-size:18px;
+	font-weight:400;
+	color:#ffffff;
+	margin-top:26px;
+	white-space: pre;
+}
+.homepageButton {
+	font-family:'Raleway', sans-serif;
+	font-size:14px;
+	font-weight:400;
+	color:#95E474;
+	margin-top:16px;
+	white-space: pre;
+	letter-spacing:1px;
+
+  	/*-webkit-transition: 0.25s ease-in-out;
+  	-moz-transition: 0.25s ease-in-out;
+  	-ms-transition: 0.25s ease-in-out;
+  	-o-transition: 0.25s ease-in-out;
+  	transition: 0.25s ease-in-out;*/
+  	transition: .4s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+  	-webkit-box-shadow: inset 0px 0 0 0 #95E474;
+  	-moz-box-shadow: inset 0px 0 0 0 #95E474;
+  	-ms-box-shadow: inset 0px 0 0 0 #95E474;
+  	-o-box-shadow: inset 0px 0 0 0 #95E474;
+  	box-shadow: inset 0px 0 0 0 #95E474;
+  	overflow: hidden;
+}
+.homepageButton:hover {
+	color:#333438;
+  	-webkit-box-shadow: inset 103px 0 0 0 #95E474;
+  	-moz-box-shadow: inset 103px 0 0 0 #95E474;
+  	-ms-box-shadow: inset 103px 0 0 0 #95E474;
+  	-o-box-shadow: inset 103px 0 0 0 #95E474;
+ 	box-shadow: inset 103px 0 0 0 #95E474;
+ 	padding-left:5px;
+ 	cursor: pointer;
+
+}
+
+
+/*
+	#EBECE8 - off white           - light shade    - text color
+	#1B95AD - eastern blue        - light accent   - brings attention to design elements
+	#5F6576 - shuttle gray        - eye catching   - main identy color
+	#E03A80 - cerise (pink)       - bright accent  - alternative to light accent
+	#95E474 - pastel  green       - bright accent  - alternative to light accent
+	#E5D752 - confetti (orange)	  - bright accent  - alternative to light accent
+	#26272A - shark blue          - base shade     - main background color
+	#1a1a1c - shade of shark blue - dark shade     - interface elements
+	#333438 - shade of shark blue - light shade    - interface elements
+	#3C3D45 - shade of shark blue - lightest shade - interface elements
+	#1B95AD - eastern blue        - default link color
+	#10cff4 - bright turquoise    - hover / active link color
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Raleway', 400;
+font-family: 'Raleway', 400i;
+font-family: 'Raleway', 700;
+font-family: 'Raleway', 700i;
+font-family: 'Vollkorn', serif;
+font-family: 'Vollkorn', 400;
+font-family: 'Vollkorn', 400i;
+font-family: 'Vollkorn', 700;
+font-family: 'Vollkorn', 700i;
+*/
+
 /* ////////////////////////////////////////////////////////////////// TEAM PAGE - INDEX /////////////////////////////////////////////////////////////////////////// */
 
 /* title */
-
-.teampageIndexTitle{
-	text-align:center;
-}
-
 .teampageIndexPretitle{
 	font-family: 'Droid Serif';
 	font-size:14px;
@@ -354,6 +416,7 @@ font-family: 'Playfair Display', 900i;*/
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size:40px;
 	color:#EBECE8;
+	text-align:center;
 	margin-top:16px;
 	margin-bottom:10px;
 }
@@ -978,3 +1041,51 @@ h1.page-header {
 }
 
 /* ////////////////////////////////////////////////////////////////// END BLOG /////////////////////////////////////////////////////////////////////// */
+
+
+
+/* ////////////////////////////////////////////////////////////////// MEDIA QUERIES //////////////////////////////////////////////////////////////////////// */
+
+/* bigger than tablet */
+@media (min-width : 768px){  
+	.mainNavigation {
+   		width: inherit;
+	    min-width: 70px;
+	    max-width: 70px;
+	    min-width: 80px;
+	    max-width: 80px;
+	    height: calc(100vh);
+	    /* margin-top: 40px; */
+	    background-color: #26272A;
+	    position: relative;
+  	}
+  	.mainContentArea {
+  		width:calc(100% - 70px);
+  		/*background-color:#ffff00;*/
+  		width:calc(100% - 80px);
+  	}
+}
+
+/* mobile to tablet */
+@media (max-width: 768px){
+	.mainNavigation {
+    	width: inherit;
+    	background-color:#1a1a1c;
+    	position:relative;
+  	}
+	.homepage{
+		height: calc(100vh - 52px);
+	}
+}
+
+/* pure mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){ 
+	.topnavlogo{
+		font-size:18px;
+		letter-spacing:1px;
+	}
+}
+
+
+
+
