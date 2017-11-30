@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
+import {render} from 'react-dom';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchHomePage } from '../../../actions';
@@ -10,6 +11,9 @@ import { Nav, NavItem, NavLink, Button } from 'reactstrap';
 import { CardBody, Card, CardImg, CardTitle, CardText, CardDeck, CardSubtitle } from 'reactstrap';
 
 import FontAwesome from 'react-fontawesome';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import classNames from 'classnames';
+
 
 class HomePage extends Component {
 	componentDidMount(){
@@ -34,7 +38,9 @@ class HomePage extends Component {
 						</Row>
 						<Row>
 							<Col xs="12">
-								<div className={ styles.homepageTitle }>
+								{/*<div className={ styles.homepageTitle fadein_test}>*/}
+
+								<div className={classNames(styles.homepageTitle,styles.fadein_test)}>
 									{ homepage.title }
 								</div>
 							</Col>
@@ -76,7 +82,7 @@ class HomePage extends Component {
 		return (
 			<div className={ styles.homepage }>
 				{this.renderProfileCard()}
-			</div>
+         	</div>
 		);
 	}
 }

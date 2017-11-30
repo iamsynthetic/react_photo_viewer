@@ -317,6 +317,35 @@ html, body{
 	/*padding-top:16px;
 	padding-bottom:16px;*/
 }
+
+.fadein_test {
+  	animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+
+.fadein_testdelay {
+	-webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 1s;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/*@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}*/
+
 .homepageSubtitle{
 	font-family: 'Vollkorn';
 	font-size:16px;
@@ -374,7 +403,6 @@ html, body{
  	cursor: pointer;
 
 }
-
 
 /*
 	#EBECE8 - off white           - light shade    - text color
