@@ -39,7 +39,7 @@ class TopNavbar extends Component {
 
 	render(){
 		return (
-			<div>
+			<div className={ styles.animate_topnav }>
 				<Navbar className={ styles.topnav } fluid collapseOnSelect>
 				    <Navbar.Header>
 				      <Navbar.Brand>

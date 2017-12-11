@@ -20,7 +20,7 @@ class HomePage extends Component {
 		this.props.fetchHomePage();
 	}
 
-	renderProfileCard(){
+	renderHomePage(){
 
 		return _.map(this.props.homepage, homepage => {
 
@@ -31,16 +31,14 @@ class HomePage extends Component {
 					<Col xs="4" sm="7">
 						<Row>
 							<Col xs="12">
-								<div className={ styles.homepagePretitle }>
+								<div className={ classNames(styles.homepagePretitle, styles.animate_pretitle) }>
 									{ homepage.pretitle }
 								</div>
 							</Col>
 						</Row>
 						<Row>
 							<Col xs="12">
-								{/*<div className={ styles.homepageTitle fadein_test}>*/}
-
-								<div className={classNames(styles.homepageTitle,styles.fadein_test)}>
+								<div className={ classNames(styles.homepageTitle, styles.animate_title) }>
 									{ homepage.title }
 								</div>
 							</Col>
@@ -48,11 +46,11 @@ class HomePage extends Component {
 						
 						<Row>
 							<Col md="4" lg="2">
-								<hr className={ styles.homepageTitleLineHr }/>
+								<hr className={ classNames(styles.homepageTitleLineHr, styles.animate_linehr) }/>
 							</Col>
 							<Col md="8" sm="10">
 								<Row>
-									<div className={ styles.homepageBody }>
+									<div className={ classNames(styles.homepageBody, styles.animate_body) }>
 										{ homepage.body }
 									</div>
 								</Row>
@@ -63,7 +61,7 @@ class HomePage extends Component {
 							</Col>
 							<Col md="8" sm="10">
 								<Row>
-									<div className={ styles.homepageButton }>
+									<div className={classNames(styles.homepageButton, styles.animate_button) }>
 										{homepage.button} <FontAwesome name="angle-right"/>
 									 </div>
 								</Row>
@@ -80,8 +78,8 @@ class HomePage extends Component {
 	render(){
 		
 		return (
-			<div className={ styles.homepage }>
-				{this.renderProfileCard()}
+			<div className={ classNames(styles.homepage, styles.animate_page) }>
+				{this.renderHomePage()}
          	</div>
 		);
 	}

@@ -32,7 +32,7 @@ class TeamIndexProfileImages extends Component {
 				          	<div className={ styles.teampageCardBodybuttonContainer }>
 					          	<NavItem className={ styles.teampageCardBodytxtNavitem }>
 									<Link to={`/team/${profile.id}`}>
-						       			<div className={ styles.teampageCardBodytxtButton }></div>
+						       			<FontAwesome className={ styles.teampageCardBodytxtButton } name="chevron-right" />
 						       		</Link>	
 						        </NavItem>
 					        </div>
