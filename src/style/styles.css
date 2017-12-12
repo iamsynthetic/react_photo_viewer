@@ -1175,6 +1175,132 @@ h1.page-header {
 /* /////////////////////////////////////////////////////////////////// END CONTACT ///////////////////////////////////////////////////////////////////////// */
 
 
+/* //////////////////////////////////////////////////////////////// CAPABILITY ///////////////////////////////////////////////////////////////////////////// */
+
+
+.cross-fade-leave {
+  opacity: 1;
+}
+.cross-fade-leave.cross-fade-leave-active {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.cross-fade-enter {
+  opacity: 0;
+}
+.cross-fade-enter.cross-fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+.cross-fade-height {
+  transition: height .5s ease-in-out;
+}
+
+
+/* */
+
+.capabilitypage{
+	/*width:100%;
+	height: calc(100vh - 62px);
+	background: url('/src/images/backgrounds/mountain_1.jpg') no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	-o-background-size: cover;*/
+}
+
+.capabilitypageText{
+	position: absolute;
+	top: 30%; 
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+}
+.capabilitypagePretitle{
+	font-family: 'Vollkorn';
+	font-size:16px;
+	font-weight:400;
+	font-style:italic;
+	color:#000000;
+}
+.capabilitypageTitle{
+	font-family: 'Vollkorn';
+	font-size:50px;
+	font-weight:400;
+	color:#000000;
+	margin-bottom: 40px;
+}
+
+.capabilitypageSubtitle{
+	font-family: 'Vollkorn';
+	font-size:16px;
+	font-weight:400;
+	color:#000000;
+}
+.capabilitypageTitleLineHr{
+	margin-left: 0px;
+    width:50px;
+	height:2px;
+	border:none;
+	margin-top:40px;
+	color:#E03A80;
+	background-color:#E03A80;
+}
+.capabilitypageBody1{
+	font-family:'Raleway', sans-serif;
+	font-size:18px;
+	font-weight:400;
+	color:#000000;
+	margin-top:26px;
+	white-space: pre;
+}
+.capabilitypageBody2{
+	font-family:'Raleway', sans-serif;
+	font-size:18px;
+	font-weight:400;
+	color:#000000;
+	margin-top:26px;
+}
+.capabilitypageButton {
+	font-family:'Raleway', sans-serif;
+	font-size:14px;
+	font-weight:400;
+	color:#95E474;
+	width:140px;
+	margin-top:40px;
+	white-space: pre;
+	letter-spacing:1px;
+  	transition: .4s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+  	-webkit-box-shadow: inset 0px 0 0 0 #95E474;
+  	-moz-box-shadow: inset 0px 0 0 0 #95E474;
+  	-ms-box-shadow: inset 0px 0 0 0 #95E474;
+  	-o-box-shadow: inset 0px 0 0 0 #95E474;
+  	box-shadow: inset 0px 0 0 0 #95E474;
+  	overflow: hidden;
+}
+.capabilitypageButton:hover {
+	color:#333438;
+  	-webkit-box-shadow: inset 140px 0 0 0 #95E474;
+  	-moz-box-shadow: inset 140px 0 0 0 #95E474;
+  	-ms-box-shadow: inset 140px 0 0 0 #95E474;
+  	-o-box-shadow: inset 140px 0 0 0 #95E474;
+ 	box-shadow: inset 140px 0 0 0 #95E474;
+ 	padding-left:5px;
+ 	cursor: pointer;
+}
+
+.capabilitypageMobile{
+	display:none;
+}
+
+.capabilitypageDesktop{
+	display:block;
+}
+
+
+/* /////////////////////////////////////////////////////////////////// END CONTACT ///////////////////////////////////////////////////////////////////////// */
+
+
 /* ////////////////////////////////////////////////////////////////// MEDIA QUERIES //////////////////////////////////////////////////////////////////////// */
 
 

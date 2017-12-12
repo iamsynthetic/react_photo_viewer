@@ -221,6 +221,19 @@
       "email_button":"Send That Letter"
     }
   ],
+  "capability": [
+    {
+      "id": "capability",
+      "pretitle": "SapientRazorfish Toronto",
+      "title": "Reach out and say\nHello, World.",
+      "subtitle": "Lets be friends, with benefits.",
+      "body1": "134 Peter Street\nM5V 2Z3\nToronto, Ontario\nCANADA",
+      "body2":"Hey we just met you and this is crazy\nbut here's our number so call us maybe",
+      "body3":"Send us a letter. Seriously.\nWrite it with a quill and inkwell,\nuse parchment paper and an envelope,\nand seal it with sealing wax and a signet ring.\nThen courier it by boat and horse.\nOr you could email.",
+      "phone_button":"555 555 5555",
+      "email_button":"Send That Letter"
+    }
+  ],
   "posts": [
     {
       "id": 1,

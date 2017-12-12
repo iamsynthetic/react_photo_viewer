@@ -11,7 +11,6 @@ import { Nav, NavItem, NavLink, Button } from 'reactstrap';
 import { CardBody, Card, CardImg, CardTitle, CardText, CardDeck, CardSubtitle } from 'reactstrap';
 
 import FontAwesome from 'react-fontawesome';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import classNames from 'classnames';
 
 

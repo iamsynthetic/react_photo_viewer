@@ -27,8 +27,7 @@ class ContactPage extends Component {
 					{/* desktop layout */}
 
 					<div className={ classNames(styles.contactpageText, styles.contactpageDesktop) }>
-						<Col xs="2" sm="2" className={ styles.fillcol1 }>
-							col1
+						<Col xs="2" sm="2">
 						</Col>
 						<Col xs="8" sm="8">
 							<Row>
@@ -85,8 +84,7 @@ class ContactPage extends Component {
 								</Col>
 							</Row>
 						</Col>
-						<Col xs="2" sm="2" className={ styles.fillcol1 }>
-							col3
+						<Col xs="2" sm="2">
 						</Col>
 					</div>
 
@@ -97,7 +95,6 @@ class ContactPage extends Component {
 
 					<div className={ classNames(styles.contactpageText, styles.contactpageMobile) }>
 						<Col xs="2" sm="2">
-							col1
 						</Col>
 						<Col xs="8" sm="8">
 							<Row>
@@ -147,7 +144,6 @@ class ContactPage extends Component {
 							</Row>
 						</Col>
 						<Col xs="2" sm="2">
-							col3
 						</Col>
 					</div>
 
