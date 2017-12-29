@@ -53,6 +53,24 @@ font-family: 'Vollkorn', 700i;
 
 /* ////////////////////////////////////////////////////////////////// END FONTS //////////////////////////////////////////////////////////////////// */
 
+.fade-enter{
+	opacity:0;
+}
+
+.fade-enter-active{
+	opacity:0;
+	transition: opacity 1000ms ease-out;
+}
+
+.fade-leave{
+	opacity:1;
+}
+
+.fade-leave-active{
+	opacity:1;
+	transition: opacity 1000ms ease-out;
+}
+
 
 
 html, body{

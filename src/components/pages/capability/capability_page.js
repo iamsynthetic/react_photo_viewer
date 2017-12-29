@@ -3,12 +3,11 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import Animate from 'react-move/Animate';
+import { CSSTransitionGroup } from 'react-transition-group' // ES6
 import { fetchCapabilityPage } from '../../../actions';
 import CapabilityPagePart1 from './capability_page_part1';
 import CapabilityPagePart2 from './capability_page_part2';
-import ContentSwapper from './Content_swapper'
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { Container, Row, Col } from 'reactstrap';
 import { Nav, NavItem, NavLink, Button } from 'reactstrap';
 import { CardBody, Card, CardImg, CardTitle, CardText, CardDeck, CardSubtitle } from 'reactstrap';
@@ -20,10 +19,8 @@ class CapabilityPage extends Component {
 	
 	constructor(props) {
 	    super(props);
-	    this.state = {
-	    	isToggleOn: true,
-	    	showAnim: false
-	    };
+	    this.state = {items: ['hello', 'world', 'click', 'me']};
+    	this.handleAdd = this.handleAdd.bind(this);
 
 	    // This binding is necessary to make `this` work in the callback
 	    this.handleClick = this.handleClick.bind(this);
@@ -33,6 +30,19 @@ class CapabilityPage extends Component {
 	componentDidMount(){
 		this.props.fetchCapabilityPage();
 	}
+
+	handleAdd() {
+		const newItems = this.state.items.concat([
+		  prompt('Enter some text')
+		]);
+		this.setState({items: newItems});
+	  }
+	
+	  handleRemove(i) {
+		let newItems = this.state.items.slice();
+		newItems.splice(i, 1);
+		this.setState({items: newItems});
+	  }
 
 	handleClick() {
 		//state is not defined
@@ -153,56 +163,7 @@ class CapabilityPage extends Component {
 								</Col>
 								<Col xs="12" sm="3">
 									<div className={ classNames(styles.capabilitypageBody1, styles.animate_body) }>
-										<button onClick={this.handleClick}>
-									    	{this.state.isToggleOn ? 'ON' : 'OFF'}
-									    </button>
-										<button onClick={this.handleClick}>
-								          Toggle
-								        </button>
-								        <Animate
-								          show={this.isToggleOn}
-
-								          start={{
-								            opacity: 0,
-								            backgroundColor: '#0000ff',
-								          }}
-
-								          enter={{
-								            opacity: [1],
-								            backgroundColor: ['#00ff00'],
-								            timing: { duration: 2000 },
-								          }}
-
-								          update={{ // catch interrupts e.g. click button in middle of leave
-								            opacity: [1],
-								            backgroundColor: ['#00ff00'],
-								            events: { end: this.endShowAnim },// an event - call update function on transition end
-								            timing: { duration: 2000 },
-								          }}
-
-								          leave={{
-								            opacity: [0],
-								            backgroundColor: ['#ff0000'],
-								            timing: { duration: 2000 },
-								            
-								          }}
-								        >
-								          {({ opacity, backgroundColor }) => {
-								            return (
-								              <div style={{
-								                opacity,
-								                width: 200,
-								                height: 200,
-								                marginTop: 10,
-								                color: 'white',
-								                backgroundColor,
-								              }}
-								              >
-								                {opacity.toFixed(3)}
-								              </div>
-								            );
-								          }}
-								        </Animate>
+									
 									</div>
 								</Col>
 								<Col xs="12" sm="3">
@@ -218,6 +179,13 @@ class CapabilityPage extends Component {
 							</Row>
 							<Row>
 								<Col xs="12" sm="4">
+									<button onClick={this.handleAdd}>Add Item</button>
+									<CSSTransitionGroup
+									transitionName="example"
+									transitionEnterTimeout={1000}
+									transitionLeaveTimeout={1000}>
+									{this.items}
+									</CSSTransitionGroup>
 								</Col>
 								<Col xs="12" sm="3">
 									<div className={classNames(styles.capabilitypageButton, styles.animate_button) }>
@@ -301,11 +269,32 @@ class CapabilityPage extends Component {
 
 	render(){
 		
-		return (
-			<div className={ classNames(styles.capabilitypage, styles.animate_page) }>
-				{this.renderCapabilityContent()}
+		const items = this.state.items.map((item, i) => (
+			<div key={item} onClick={() => this.handleRemove(i)}>
+				{item}
 			</div>
-         );
+		));
+
+		return (
+			
+			// <div className={ classNames(styles.capabilitypage, styles.animate_page) }>
+			// 	{this.renderCapabilityContent()}
+			// </div>
+
+			<div>
+        		<button onClick={this.handleAdd}>Add Item</button>
+				<ReactCSSTransitionGroup
+				transitionName='comeontrythis'
+				transitionAppear={true}
+				transitionEnter={true}
+				transitionLeave={true}
+				transitionEnterTimeout={10000}
+				transitionAppearTimeout={10000}
+				transitionLeaveTimeout={10000}>
+				{items}
+				</ReactCSSTransitionGroup>
+      		</div>
+        );
 	}
 }
 

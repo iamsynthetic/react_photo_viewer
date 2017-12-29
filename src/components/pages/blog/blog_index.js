@@ -11,27 +11,31 @@ class BlogIndex extends Component {
 	}
 
 	renderBlogPosts(){
-		return _.map(this.props.blog, blogdata => {
+		return _.map(this.props.blogphotos, blogdata => {
 			return (
+				<div>
+				<p>testing</p>
 				<li className="list-group-item" key={blogdata.id}>
 					<div>
+					
 						<img src={blogdata.thumbnailUrl} />
 						<Link to={`/blog/${blogdata.id}`}>
 						{blogdata.title}
 						</Link>
 					</div>
 				</li>
+				</div>
 			);
 		})
 	}
 
 	render(){
-		console.log(this.props.blog);
+		console.log(this.props.blogphotos);
 		return (
 			<div className={ styles.blogAddPhoto }>
 				<div className="text-xs-right">
 					<Link className="btn btn-primary" to="/blog/new">
-						Add a Photo to this blog post
+						Add a post
 					</Link>
 				</div>
 				<h3>Blog Posts</h3>
