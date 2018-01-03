@@ -56,9 +56,9 @@ class TopNavbar extends Component {
 				        <NavItem>
 				        	<Link to="/team" className={ styles.topnavlinks }>Team</Link>
 				        </NavItem>
-				        <NavItem>
+				        {/* <NavItem>
 				        <Link to="/capability" className={ styles.topnavlinks }>Capability</Link>
-				        </NavItem>
+				        </NavItem> */}
 				        <NavItem>
 				        	<Link to="/blog" className={ styles.topnavlinks }>News</Link>
 				        </NavItem>
