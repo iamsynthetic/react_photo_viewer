@@ -1,5 +1,32 @@
 {
+  "homepage": [
+    {
+      "id": 1,
+      "pretitle": "SapientRazorfish Toronto",
+      "title": "We create and build\nwith style. We get it done.",
+      "title2": "websites",
+      "title3": "landing pages",
+      "title4": "banner ads",
+      "subtitle": "with speed, precision, and dedication.",
+      "body": "We think on our feet,\nand deliver on tight deadlines every day.\nOur snack day is pretty great too.",
+      "button": "Learn More"
+    }
+  ],
   "photos": [
+    {
+      "id": 1,
+      "title": "photo 1",
+      "url": "http://placehold.it/600/771796",
+      "thumbnailUrl": "http://placehold.it/150/771796",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "photo 2",
+      "url": "http://placehold.it/600/771796",
+      "thumbnailUrl": "http://placehold.it/150/771796",
+      "author": "typicode"
+    },
     {
       "id": 3,
       "title": "image 3",
@@ -8,18 +35,83 @@
       "author": "typicode"
     },
     {
-      "id": 4,
-      "title": "image 4",
+      "title": "test",
+      "url": "google.com",
+      "thumbnailUrl": "test",
+      "author": "author",
+      "id": 4
+    },
+    {
+      "title": "title",
+      "url": "url",
+      "thumbnailUrl": "thumb",
+      "author": "author",
+      "id": 5
+    }
+  ],
+  "blog": [
+    {
+      "id": 1,
+      "title": "blog post 1",
       "url": "http://placehold.it/600/771796",
       "thumbnailUrl": "http://placehold.it/150/771796",
       "author": "typicode"
     },
     {
-      "id": 5,
-      "title": "image 5",
+      "id": 2,
+      "title": "blog post 2",
       "url": "http://placehold.it/600/771796",
       "thumbnailUrl": "http://placehold.it/150/771796",
       "author": "typicode"
+    },
+    {
+      "id": 3,
+      "title": "blog post 3",
+      "url": "http://placehold.it/600/771796",
+      "thumbnailUrl": "http://placehold.it/150/771796",
+      "author": "typicode"
+    },
+    {
+      "title": "title",
+      "url": "url",
+      "thumbnailUrl": "thumb",
+      "author": "author",
+      "id": 4
+    },
+    {
+      "title": "title",
+      "url": "url",
+      "thumbnailUrl": "thumb",
+      "author": "author",
+      "id": 5
+    },
+    {
+      "title": "fsdf",
+      "url": "sdffd",
+      "thumbnailUrl": "sfsd",
+      "author": "sdfsdf",
+      "id": 6
+    },
+    {
+      "title": "test",
+      "url": "test.com",
+      "thumbnailUrl": "google.com/thubm",
+      "author": "chirs",
+      "id": 7
+    },
+    {
+      "title": "tset",
+      "url": "tset",
+      "thumbnailUrl": "stet",
+      "author": "ste",
+      "id": 8
+    },
+    {
+      "title": "test",
+      "url": "tse",
+      "thumbnailUrl": "tes",
+      "author": "stst",
+      "id": 9
     }
   ],
   "teampagetitle": [
@@ -31,88 +123,143 @@
       "body": ""
     }
   ],
-  "teammembertext": [
+  "teampageprofile": [
     {
-      "id": 1,
-      "pretitle": "",
-      "title": "",
-      "subtitle": "",
-      "body": ""
-    },
-    {
-      "id": 2,
-      "pretitle": "",
-      "title": "",
-      "subtitle": "",
-      "body": ""
-    }
-  ],
-  "profileimages": [
-    {
-      "id": 1,
-      "title": "profile image 1",
-      "thumbnailUrl": "src/images/profile_thumbs/batman_thumb.jpg",
-      "url": "src/images/profile_images/batman_profile.jpg",
-      "author": "batman",
+      "id": "batman",
+      "nextid": "daredevil",
       "title": "BATMAN",
+      "thumbnailUrl": "../src/images/profile_thumbs/batman_thumb.jpg",
+      "url": "../src/images/profile_images/batman_profile.jpg",
+      "pretitle": "batman",
       "subtitle": "billionaire",
       "body": "batman does stuff to keep stuff safe",
-      "button":"user"
+      "button": "../src/images/interface_elements/right_triangle.png",
+      "buttonicon": "fa fa-arrow-right",
+      "profile_img": "../src/images/profile_images/batman2.jpg",
+      "profile_pretitle": "BATMAN",
+      "profile_title": "Creating new Visual language\nfor all digital platforms",
+      "profile_body_title": "ALTHOUGH THE MIHANO MOMOSA BRAND USES HIGH-IMPACT DESIGNS, IT WANTED TO TRANSFORM ITS DIGITAL PRESENCE.",
+      "profile_body": "We were tasked with creating a new visual language for all digital platforms, including mobile, without sacrificing the beauty of the site or the brand’s message.\n \nThrough updated typography, smooth animations, and big photography, we created a visually appealing, immersive world designed to motivate and engage customers while making them feel like royalty. ",
+      "profile_sm_img": "../src/images/profile_images/batman_sm.jpg",
+      "profile_button": "Learn More",
+      "profile_switch_button": "NEXT"
     },
     {
-      "id": 2,
-      "title": "profile image 2",
+      "id": "daredevil",
+      "nextid": "gambit",
+      "title": "DAREDEVIL",
       "thumbnailUrl": "src/images/profile_thumbs/daredevil_thumb.jpg",
       "url": "src/images/profile_images/daredevil_profile.jpg",
-      "author": "daredevil",
-      "title": "DAREDEVIL",
       "subtitle": "laywer",
       "body": "Daredevil does stuff to keep stuff safe",
-      "button":"user"
+      "button": "src/images/interface_elements/right_triangle.png",
+      "buttonicon": "fa-arrow-right",
+      "profile_img": "../src/images/profile_images/daredevil2.jpg",
+      "profile_pretitle": "DAREDEVIL",
+      "profile_title": "Creating new Visual language\nfor all digital platforms",
+      "profile_body_title": "ALTHOUGH THE MIHANO MOMOSA BRAND USES HIGH-IMPACT DESIGNS, IT WANTED TO TRANSFORM ITS DIGITAL PRESENCE.",
+      "profile_body": "We were tasked with creating a new visual language for all digital platforms, including mobile, without sacrificing the beauty of the site or the brand’s message.\n \nThrough updated typography, smooth animations, and big photography, we created a visually appealing, immersive world designed to motivate and engage customers while making them feel like royalty. ",
+      "profile_sm_img": "../src/images/profile_images/daredevil_sm.jpg",
+      "profile_button": "Learn More",
+      "profile_switch_button": "NEXT"
     },
     {
-      "id": 3,
-      "title": "profile image 3",
+      "id": "gambit",
+      "nextid": "nightwing",
+      "title": "GAMBIT",
       "thumbnailUrl": "src/images/profile_thumbs/gambit_thumb.jpg",
       "url": "src/images/profile_images/gambit_profile.jpg",
-      "author": "gambit",
-      "title": "GAMBIT",
       "subtitle": "theif",
       "body": "Gambit does stuff to keep stuff safe",
-      "button":"user"
+      "button": "src/images/interface_elements/right_triangle.png",
+      "buttonicon": "fa-arrow-right",
+      "profile_img": "../src/images/profile_images/gambit2.jpg",
+      "profile_pretitle": "GAMBIT",
+      "profile_title": "Creating new Visual language\nfor all digital platforms",
+      "profile_body_title": "ALTHOUGH THE MIHANO MOMOSA BRAND USES HIGH-IMPACT DESIGNS, IT WANTED TO TRANSFORM ITS DIGITAL PRESENCE.",
+      "profile_body": "We were tasked with creating a new visual language for all digital platforms, including mobile, without sacrificing the beauty of the site or the brand’s message.\n \nThrough updated typography, smooth animations, and big photography, we created a visually appealing, immersive world designed to motivate and engage customers while making them feel like royalty. ",
+      "profile_sm_img": "../src/images/profile_images/gambit_sm.jpg",
+      "profile_button": "Learn More",
+      "profile_switch_button": "NEXT"
     },
     {
-      "id": 4,
-      "title": "profile image 4",
+      "id": "nightwing",
+      "nextid": "wolverine",
+      "title": "NIGHTWING",
       "thumbnailUrl": "src/images/profile_thumbs/nightwing_thumb.jpg",
       "url": "src/images/profile_images/nightwing_profile.jpg",
-      "author": "nightwing",
-      "title": "NIGHTWING",
       "subtitle": "cop",
       "body": "Nightwing does stuff to keep stuff safe",
-      "button":"user"
+      "button": "src/images/interface_elements/right_triangle.png",
+      "buttonicon": "fa-arrow-right",
+      "profile_img": "../src/images/profile_images/nightwing2.jpg",
+      "profile_pretitle": "NIGHTWING",
+      "profile_title": "Creating new Visual language\nfor all digital platforms",
+      "profile_body_title": "ALTHOUGH THE MIHANO MOMOSA BRAND USES HIGH-IMPACT DESIGNS, IT WANTED TO TRANSFORM ITS DIGITAL PRESENCE.",
+      "profile_body": "We were tasked with creating a new visual language for all digital platforms, including mobile, without sacrificing the beauty of the site or the brand’s message.\n \nThrough updated typography, smooth animations, and big photography, we created a visually appealing, immersive world designed to motivate and engage customers while making them feel like royalty. ",
+      "profile_sm_img": "../src/images/profile_images/nightwing_sm.jpg",
+      "profile_button": "Learn More"
     },
     {
-      "id": 5,
-      "title": "profile image 5",
+      "id": "wolverine",
+      "nextid": "hellboy",
+      "title": "WOLVERINE",
       "thumbnailUrl": "src/images/profile_thumbs/wolverine_thumb.jpg",
       "url": "src/images/profile_images/wolverine_profile.jpg",
-      "author": "wolverine",
-      "title": "WOLVERINE",
       "subtitle": "vagabond",
       "body": "Wolverine does stuff to keep stuff safe",
-      "button":"user"
+      "button": "src/images/interface_elements/right_triangle.png",
+      "buttonicon": "fa-arrow-right",
+      "profile_img": "../src/images/profile_images/wolverine2.jpg",
+      "profile_pretitle": "WOLVERINE",
+      "profile_title": "Creating new Visual language\nfor all digital platforms",
+      "profile_body_title": "ALTHOUGH THE MIHANO MOMOSA BRAND USES HIGH-IMPACT DESIGNS, IT WANTED TO TRANSFORM ITS DIGITAL PRESENCE.",
+      "profile_body": "We were tasked with creating a new visual language for all digital platforms, including mobile, without sacrificing the beauty of the site or the brand’s message.\n \nThrough updated typography, smooth animations, and big photography, we created a visually appealing, immersive world designed to motivate and engage customers while making them feel like royalty. ",
+      "profile_sm_img": "../src/images/profile_images/wolverine_sm.jpg",
+      "profile_button": "Learn More"
     },
     {
-      "id": 6,
-      "title": "profile thumb 6",
+      "id": "hellboy",
+      "nextid": "batman",
+      "title": "HELLBOY",
       "thumbnailUrl": "src/images/profile_thumbs/hellboy_thumb.jpg",
       "url": "src/images/profile_images/hellboy_profile.jpg",
-      "author": "hellboy",
-      "title": "HELLBOY",
       "subtitle": "detective",
       "body": "Hellboy does stuff to keep stuff safe",
-      "button":"user"
+      "button": "src/images/interface_elements/right_triangle.png",
+      "profile_img": "../src/images/profile_images/hellboy2.jpg",
+      "profile_pretitle": "HELLBOY",
+      "profile_title": "Creating new Visual language\nfor all digital platforms",
+      "profile_body_title": "ALTHOUGH THE MIHANO MOMOSA BRAND USES HIGH-IMPACT DESIGNS, IT WANTED TO TRANSFORM ITS DIGITAL PRESENCE.",
+      "profile_body": "We were tasked with creating a new visual language for all digital platforms, including mobile, without sacrificing the beauty of the site or the brand’s message.\n \nThrough updated typography, smooth animations, and big photography, we created a visually appealing, immersive world designed to motivate and engage customers while making them feel like royalty. ",
+      "profile_sm_img": "../src/images/profile_images/hellboy_sm.jpg",
+      "profile_button": "Learn More"
+    }
+  ],
+  "contact": [
+    {
+      "id": "contact",
+      "pretitle": "SapientRazorfish Toronto",
+      "title": "Reach out and say\nHello, World.",
+      "subtitle": "Lets be friends, with benefits.",
+      "body1": "134 Peter Street\nM5V 2Z3\nToronto, Ontario\nCANADA",
+      "body2": "Hey we just met you and this is crazy\nbut here's our number so call us maybe",
+      "body3": "Send us a letter. Seriously.\nWrite it with a quill and inkwell,\nuse parchment paper and an envelope,\nand seal it with sealing wax and a signet ring.\nThen courier it by boat and horse.\nOr you could email.",
+      "phone_button": "555 555 5555",
+      "email_button": "Send That Letter"
+    }
+  ],
+  "capability": [
+    {
+      "id": "capability",
+      "pretitle": "SapientRazorfish Toronto",
+      "title": "Reach out and say\nHello, World.",
+      "subtitle": "Lets be friends, with benefits.",
+      "body1": "134 Peter Street\nM5V 2Z3\nToronto, Ontario\nCANADA",
+      "body2": "Hey we just met you and this is crazy\nbut here's our number so call us maybe",
+      "body3": "Send us a letter. Seriously.\nWrite it with a quill and inkwell,\nuse parchment paper and an envelope,\nand seal it with sealing wax and a signet ring.\nThen courier it by boat and horse.\nOr you could email.",
+      "phone_button": "555 555 5555",
+      "email_button": "Send That Letter"
     }
   ],
   "posts": [

@@ -40,6 +40,7 @@ module.exports = {
       { test: /\.scss$/, loaders: ['style','css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]','resolve-url','sass']}
     ]
   },  
+<<<<<<< HEAD
   // module: {
   //   loaders: [{
   //     exclude: /node_modules/,
@@ -62,6 +63,8 @@ module.exports = {
   //   }]
   // },
 >>>>>>> livedata
+=======
+>>>>>>> new_layout
   resolve: {
     extensions: ['', '.js', '.jsx']
   },

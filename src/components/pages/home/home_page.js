@@ -1,37 +1,75 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
+import {render} from 'react-dom';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchProfileImages } from '../../../actions';
+import { fetchHomePage } from '../../../actions';
 import styles from '../../../style/styles.css';
-
-import Example from './home_page_card';
 
 import { Container, Row, Col } from 'reactstrap';
 import { Nav, NavItem, NavLink, Button } from 'reactstrap';
 import { CardBody, Card, CardImg, CardTitle, CardText, CardDeck, CardSubtitle } from 'reactstrap';
 
+import FontAwesome from 'react-fontawesome';
+import classNames from 'classnames';
+
+
 class HomePage extends Component {
 	componentDidMount(){
-		this.props.fetchProfileImages();
+		this.props.fetchHomePage();
 	}
 
-	renderProfileCard(){
+	renderHomePage(){
 
-		return _.map(this.props.profileimages, profimg2 => {
+		return _.map(this.props.homepage, homepage => {
 
 			return (
-				<Col sm="2">
-				<Card className={ styles.homepageCardBg }>
-			        <CardImg top width="100%" key={profimg2.id} src={ profimg2.url } alt="Card image cap" />
-			        <div className={ styles.homepageCardBodyTxt }>
-			          <CardTitle>Card title</CardTitle>
-			          <CardSubtitle>Card subtitle</CardSubtitle>
-			          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-			          <Button>Button</Button>
-			        </div>
-			    </Card>
-			    </Col>
+				<div className={ styles.homepageText }>
+					<Col xs="4" sm="2">
+					</Col>
+					<Col xs="4" sm="7">
+						<Row>
+							<Col xs="12">
+								<div className={ classNames(styles.homepagePretitle, styles.animate_pretitle) }>
+									{ homepage.pretitle }
+								</div>
+							</Col>
+						</Row>
+						<Row>
+							<Col xs="12">
+								<div className={ classNames(styles.homepageTitle, styles.animate_title) }>
+									{ homepage.title }
+								</div>
+							</Col>
+						</Row>
+						
+						<Row>
+							<Col md="4" lg="2">
+								<hr className={ classNames(styles.homepageTitleLineHr, styles.animate_linehr) }/>
+							</Col>
+							<Col md="8" sm="10">
+								<Row>
+									<div className={ classNames(styles.homepageBody, styles.animate_body) }>
+										{ homepage.body }
+									</div>
+								</Row>
+							</Col>
+						</Row>
+						<Row>
+							<Col md="4" lg="2">
+							</Col>
+							<Col md="8" sm="10">
+								<Row>
+									<div className={classNames(styles.homepageButton, styles.animate_button) }>
+										{homepage.button} <FontAwesome name="angle-right"/>
+									 </div>
+								</Row>
+							</Col>
+						</Row>
+					</Col>
+					<Col xs="4" sm="3">
+					</Col>
+				</div>
 			);
 		})
 	}
@@ -39,15 +77,15 @@ class HomePage extends Component {
 	render(){
 		
 		return (
-			<div className={ styles.homepageMenu }>
-				{this.renderProfileCard()}
-			</div>
+			<div className={ classNames(styles.homepage, styles.animate_page) }>
+				{this.renderHomePage()}
+         	</div>
 		);
 	}
 }
 
 function mapStateToProps(state){
-	return { profileimages: state.profileimages }
+	return { homepage: state.home }
 }
 
-export default connect(mapStateToProps, {fetchProfileImages})(HomePage);
+export default connect(mapStateToProps, {fetchHomePage})(HomePage);

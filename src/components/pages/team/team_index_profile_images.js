@@ -2,7 +2,7 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchProfileImages } from '../../../actions';
+import { fetchTeamPageProfile } from '../../../actions';
 import styles from '../../../style/styles.css';
 
 import { Container, Row, Col } from 'reactstrap';
@@ -12,12 +12,12 @@ import FontAwesome from 'react-fontawesome';
 
 class TeamIndexProfileImages extends Component {
 	componentDidMount(){
-		this.props.fetchProfileImages();
+		this.props.fetchTeamPageProfile();
 	}
 
 	renderProfileCard(){
 
-		return _.map(this.props.profileimages, profile => {
+		return _.map(this.props.teamprofile, profile => {
 
 			return (
 				<Col sm="4" lg="2">
@@ -29,11 +29,13 @@ class TeamIndexProfileImages extends Component {
 				          	<CardSubtitle className={ styles.teampageCardBodytxtSubtitle }>{ profile.subtitle }</CardSubtitle>
 				          	<CardText className={ styles.teampageCardBodytxtText }>{ profile.body }</CardText>
 				          	
-				          	<NavItem className={ styles.teampageCardBodytxtNavitem }>
-					       		<Link to="/">	
-					       			<FontAwesome className={ styles.teampageCardBodytxtButton } name={ profile.button }/>
-					       		</Link>	
-					        </NavItem>
+				          	<div className={ styles.teampageCardBodybuttonContainer }>
+					          	<NavItem className={ styles.teampageCardBodytxtNavitem }>
+									<Link to={`/team/${profile.id}`}>
+						       			<FontAwesome className={ styles.teampageCardBodytxtButton } name="chevron-right" />
+						       		</Link>	
+						        </NavItem>
+					        </div>
 				        </div>
 			        </div>
 			    </Card>
@@ -53,7 +55,7 @@ class TeamIndexProfileImages extends Component {
 }
 
 function mapStateToProps(state){
-	return { profileimages: state.profileimages }
+	return { teamprofile: state.teamprofile }
 }
 
-export default connect(mapStateToProps, {fetchProfileImages})(TeamIndexProfileImages);
+export default connect(mapStateToProps, {fetchTeamPageProfile})(TeamIndexProfileImages);
