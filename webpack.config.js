@@ -18,27 +18,6 @@ module.exports = {
       { test: /\.scss$/, loaders: ['style','css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]','resolve-url','sass']}
     ]
   },  
-  // module: {
-  //   loaders: [{
-  //     exclude: /node_modules/,
-  //     loader: 'babel',
-  //     query: {
-  //       presets: ['react', 'es2015', 'stage-1']
-  //     }
-  //   },
-  //   {
-  //     test: /\.css$/,
-  //     loader: ExtractTextPlugin.extract(
-  //       combineLoaders([{
-  //         loader: 'css-loader',
-  //           query: {
-  //             modules: true,
-  //             localIdentName: '[name]__[local]___[hash:base64:5]'
-  //           }
-  //       }])
-  //     )
-  //   }]
-  // },
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
