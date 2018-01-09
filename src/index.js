@@ -16,13 +16,7 @@ import { Nav, NavItem, NavLink, Navbar, Button } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from './style/styles.css';
 
-<<<<<<< HEAD
-import styles from './style/style.css';
-
-const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
-=======
 const createStoreWithMiddleware = applyMiddleware(promise, multi, thunk)(createStore);
->>>>>>> livedata
 
 ReactDOM.render(
 	<Provider store={createStoreWithMiddleware(reducers)}>
